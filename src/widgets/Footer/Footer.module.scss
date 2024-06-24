@@ -1,0 +1,74 @@
+.footer {
+  @apply h-fit py-[5.4vh] px-[3.559vw];
+
+  &Main {
+    @apply w-full flex items-start justify-between relative;
+  }
+
+  &Bottom {
+    @apply pt-[6vh] flex items-center justify-between gap-[3.262vw];
+
+    span {
+      @apply text-[0.830vw] capitalize;
+      line-height: 150%;
+    }
+
+    &Row {
+      @apply flex items-center flex-1 gap-[1.186vw];
+
+      &Line {
+        @apply flex-1 h-[0.1vh] bg-white;
+      }
+    }
+  }
+
+  &Content {
+    @apply w-full h-full pt-[8.6vh] pb-[3.25vh] px-[2.372vw] relative flex flex-col items-stretch;
+
+    &Bg {
+      @apply absolute w-full h-full top-0 left-0 pointer-events-none z-[-1];
+
+      svg {
+        @apply w-full h-full;
+      }
+    }
+  }
+
+  &Body {
+    @apply flex gap-[1.423vw];
+  }
+
+  &Column {
+    @apply pl-[1.186vw] pr-[1.423vw];
+  }
+
+  &List {
+    @apply text-[0.949vw] flex flex-col items-start gap-[1.7vh];
+
+    &Title {
+      @apply uppercase;
+      line-height: 145%;
+    }
+
+    ul {
+      @apply flex flex-col items-start gap-[1.5vh];
+    }
+
+    &Item {
+      a {
+        @apply normal-case first-letter:capitalize flex items-center gap-[0.237vw];
+
+        svg {
+          @apply min-w-[1.75vw] w-[1.75vw] h-[2vh];
+        }
+
+        color: $light-gray;
+        line-height: 100%;
+      }
+    }
+  }
+
+  &Logo {
+    @apply w-[5vw] h-[10.8vh];
+  }
+}

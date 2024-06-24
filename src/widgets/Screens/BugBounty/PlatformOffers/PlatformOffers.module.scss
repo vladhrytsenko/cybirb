@@ -1,0 +1,11 @@
+.platformOffers {
+  @apply h-fit;
+
+  div[class='section-title-block'] {
+    @apply max-w-[35vw] w-full;
+  }
+
+  div[class='section-text-block'] {
+    @apply max-w-[28.470vw] w-full;
+  }
+}

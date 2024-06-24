@@ -1,0 +1,84 @@
+.preloader {
+  @apply fixed top-0 left-0 w-full h-full z-[6];
+
+  background-color: $dark;
+
+  transition: 1s ease 0.5s !important;
+  transition-property: opacity, scale !important;
+
+  &.loaded {
+    opacity: 0 !important;
+    scale: 1.5 !important;
+
+    div[class='container'] {
+      opacity: 0 !important;
+    }
+  }
+
+  div[class='container'] {
+    @apply py-[3vh] flex flex-col justify-end items-end;
+
+    transition: 0.45s ease;
+    transition-property: opacity, scale;
+  }
+
+  &Label {
+    @apply flex items-center gap-[1.898vw] text-[2.372vw] uppercase;
+    line-height: 217%;
+  }
+
+  &CenterText {
+    @apply text-[0.830vw] absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] uppercase;
+    line-height: 145%;
+  }
+
+  &Circles {
+    @apply w-[13.049vw] h-[13.049vw] absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-[-1] opacity-0 scale-[0.8];
+
+    &.two {
+      @apply w-[8.778vw] h-[8.778vw];
+    }
+  }
+
+  &CodeImage {
+    @apply absolute pointer-events-none object-center object-contain opacity-0;
+
+    &.left {
+      @apply w-[26.335vw] h-[25.8vh] left-0;
+
+      &.bottom {
+        @apply bottom-[14.5vh];
+      }
+
+      &.top {
+        @apply top-0;
+      }
+    }
+
+    &.right {
+      @apply w-[30.427vwvw] h-[32.1vh] right-0;
+
+      &.bottom {
+        @apply bottom-[8.2vh];
+      }
+
+      &.top {
+        @apply top-0;
+      }
+    }
+  }
+
+  &Range {
+    @apply absolute bottom-0 left-0 right-0 h-[4.1vh] w-[105%] translate-x-[-100%];
+  }
+
+  &Logo {
+    @apply w-[3.855vw] h-[3.855vw] absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-[2] opacity-0 pointer-events-none scale-[0.6];
+    transition: 0.65s ease 0.35s;
+    transition-property: opacity, scale;
+
+    &.loaded {
+      @apply opacity-100 scale-100;
+    }
+  }
+}

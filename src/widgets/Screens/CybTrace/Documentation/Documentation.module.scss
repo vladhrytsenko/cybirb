@@ -1,0 +1,61 @@
+.documentation {
+  &Wrapper {
+    @apply flex items-stretch gap-[3.559vw] pt-[6vh];
+
+    > div {
+      @apply flex-1;
+    }
+
+    .image {
+      @apply rounded-[1.068vw] h-full overflow-hidden;
+
+      border: 0.059vw solid $stroke;
+
+      img {
+        @apply w-full h-full object-cover object-center;
+      }
+    }
+
+    .block {
+      @apply flex flex-col justify-between gap-[12.7vh];
+
+      .group {
+        @apply flex flex-col gap-[4vh];
+
+        div[class='section-text-block'] {
+          @apply max-w-[26.690vw] w-full;
+        }
+      }
+
+      .links {
+        @apply w-full grid;
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 7vh);
+        grid-auto-rows: 7vh;
+
+        .link {
+          @apply text-[0.830vw] flex items-center justify-center uppercase relative;
+
+          &:hover {
+            svg {
+              path:nth-child(2) {
+                fill: $blue !important;
+              }
+            }
+          }
+
+          svg {
+            @apply w-full h-full absolute top-0 left-0 z-[-1] pointer-events-none;
+
+            path:nth-child(2) {
+              @apply transition-colors duration-[450ms];
+            }
+          }
+
+          line-height: 145%;
+        }
+      }
+    }
+  }
+}

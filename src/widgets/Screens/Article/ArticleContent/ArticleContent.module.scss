@@ -1,0 +1,38 @@
+.articleContent {
+  @apply h-fit;
+
+  div[class='container'] {
+    @apply flex flex-col items-center;
+    height: fit-content !important;
+  }
+
+  &Ticker {
+    @apply absolute bottom-0 w-full left-0 translate-y-full overflow-hidden;
+  }
+
+  &Block {
+    @apply ml-auto w-[55%];
+
+    p {
+      @apply text-[1.186vw] mt-[5.4vh] mb-[9vh];
+      line-height: 145%;
+      color: $light-gray;
+    }
+  }
+
+  &ViewAll {
+    @apply flex items-center justify-center w-full;
+  }
+
+  &TopicTitle {
+    @apply max-w-[23.725vw] w-full;
+
+    div[class='card-number'] {
+      @apply text-[1.423vw];
+
+      &::before {
+        @apply max-w-[9vw] w-full h-[2.8vh];
+      }
+    }
+  }
+}

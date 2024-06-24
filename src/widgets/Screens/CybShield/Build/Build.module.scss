@@ -1,0 +1,17 @@
+.build {
+  @apply h-fit;
+
+  &Bg {
+    @apply w-full h-full absolute top-0 left-0 pointer-events-none z-[-1];
+  }
+
+  div[class*='container'] {
+    @apply min-h-[70vh] flex flex-col pt-[5vh] pb-[10vh];
+
+    div[class='line'] {
+      &::before {
+        background-color: #151515;
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.hero {
+  @apply h-fit;
+
+  &Bg {
+    @apply absolute left-0 top-0 pointer-events-none w-full h-full z-[0];
+
+    svg {
+      @apply w-full h-full;
+    }
+  }
+
+  &Statistic {
+    @apply flex flex-col items-start gap-[3.25vh] capitalize;
+
+    &Title {
+      @apply text-[2.372vw] font-medium;
+
+      line-height: 90%;
+    }
+
+    &Text {
+      @apply text-[1.186vw];
+
+      color: #7b7b7b;
+      line-height: 145%;
+    }
+  }
+
+  &Statistics {
+    @apply flex justify-start items-center gap-[5.931vw] mb-[2.1vh];
+  }
+
+  &LeftBlock {
+    @apply max-w-[39vw];
+  }
+
+  &RightBlock {
+    @apply max-w-[35vw];
+  }
+
+  &Block {
+    @apply flex flex-col gap-[3.25vh] w-full;
+  }
+
+  div[class*='container'] {
+    @apply flex items-center;
+  }
+
+  div[class='section-text-group'] {
+    @apply w-full justify-between;
+  }
+
+  div[class='section-title-block'] {
+    @apply max-w-[35vw] w-full;
+  }
+}

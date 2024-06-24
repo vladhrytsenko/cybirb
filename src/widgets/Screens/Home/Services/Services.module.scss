@@ -1,0 +1,37 @@
+.services {
+  @apply h-fit;
+
+  div[class='section-head'] {
+    @apply mx-[3.559vw];
+  }
+
+  div[class='section-text-group'] {
+    @apply px-[3.559vw];
+  }
+
+  div[class*='container'] {
+    @apply px-[0];
+  }
+
+  &TextBlock {
+    @apply max-w-[25.741vw] w-full;
+  }
+
+  &Cards {
+    @apply mt-[15vh] flex items-center  overflow-hidden;
+
+    div[class='swiper-wrapper'] {
+      @apply items-center flex;
+    }
+
+    &Group {
+      @apply w-fit flex flex-col gap-[1.423vw];
+      display: flex !important;
+      width: fit-content !important;
+
+      &:first-child {
+        margin-left: 3.559vw !important;
+      }
+    }
+  }
+}

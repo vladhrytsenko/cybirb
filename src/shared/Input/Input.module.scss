@@ -1,0 +1,50 @@
+.inputGroup {
+  @apply flex flex-col items-start;
+
+  &Label {
+    @apply text-[0.712vw] uppercase mb-[1.5vh];
+    line-height: 120%;
+  }
+
+  .input {
+    @apply relative w-[16vw] h-[4vh];
+
+    &Bg {
+      @apply absolute left-0 top-0 z-[-1] w-full h-full pointer-events-none;
+
+      path {
+        @apply transition-colors duration-[350ms];
+      }
+    }
+
+    input {
+      @apply w-full h-full py-[0.85vh] px-[0.712vw] text-[0.949vw] transition-colors duration-[350ms];
+
+      &:focus {
+        background-color: #fff;
+      }
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        -moz-appearance: textfield;
+      }
+
+      color: $dark;
+      line-height: 131%;
+    }
+  }
+
+  &Notice {
+    @apply flex items-center gap-[0.712vw] mt-[0.43vh];
+
+    &Icon {
+      @apply w-[1.186vw] h-[1.186vw] object-contain object-center;
+    }
+
+    span {
+      @apply text-[0.712vw] first-letter:capitalize;
+      line-height: 200%;
+    }
+  }
+}

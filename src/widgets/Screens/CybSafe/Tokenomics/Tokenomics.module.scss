@@ -1,0 +1,13 @@
+.tokenomics {
+  @apply h-fit;
+
+  &Image {
+    @apply w-full h-[67vh] mt-[13.3vh] overflow-hidden relative;
+
+    clip-path: url(#cybsafe-tokenomics-image);
+
+    img {
+      @apply w-full h-full object-cover object-center;
+    }
+  }
+}

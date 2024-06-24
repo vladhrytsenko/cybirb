@@ -1,0 +1,36 @@
+.projectAudit {
+  @apply h-fit;
+
+  &TextBlock {
+    @apply max-w-[25.801vw] w-full;
+  }
+
+  div[class='section-text-group'] {
+    @apply items-end;
+  }
+
+  div[class*='container'] {
+    @apply relative;
+  }
+
+  &Wrapper {
+    @apply w-full flex gap-[10vw] relative;
+
+    &::before {
+      @apply absolute left-1/2 top-0 bottom-0 h-full w-[0.059vw] bg-[#272629];
+      content: '';
+    }
+  }
+
+  .block {
+    @apply flex-1;
+  }
+
+  &Cards {
+    @apply grid gap-[1.186vw] mt-[12vh];
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+  }
+}

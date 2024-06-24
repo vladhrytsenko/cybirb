@@ -1,0 +1,20 @@
+.banner {
+  @apply relative w-full;
+
+  &Content {
+    @apply py-[8.125vh] w-full h-full flex flex-col items-center text-center justify-center gap-[5.4vh] relative;
+  }
+
+  &Title {
+    @apply text-[2.847vw] uppercase font-medium;
+    line-height: 100%;
+  }
+
+  &Bg {
+    @apply absolute z-[-1] pointer-events-none top-0 left-0 w-full h-full;
+
+    svg {
+      @apply w-full h-full;
+    }
+  }
+}

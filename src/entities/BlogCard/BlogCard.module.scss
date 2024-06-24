@@ -1,0 +1,58 @@
+.blogCard {
+  @apply flex-1 relative;
+
+  border: 0.059vw solid $light-gray;
+
+  &.clip {
+    border: none !important;
+  }
+
+  &Clip {
+    @apply absolute top-0 left-0 w-full h-full pointer-events-none z-[-1];
+  }
+
+  &:hover {
+    .blogCardThumbnail {
+      @apply opacity-100;
+    }
+  }
+
+  &.fullBorder {
+    border-right: 0.0295vw solid $light-gray !important;
+    border-left: 0.0295vw solid $light-gray !important;
+
+    &:first-child {
+      border-left: 0.059vw solid $light-gray !important;
+    }
+
+    &:last-child {
+      border-right: 0.059vw solid $light-gray !important;
+    }
+  }
+
+  &:not(:last-child) {
+    border-right: none;
+  }
+
+  &Thumbnail {
+    @apply w-full h-full left-0 top-0 scale-[0.995] absolute pointer-events-none select-none z-[-1] transition-opacity duration-500 opacity-0 overflow-hidden object-cover object-center;
+    transform-origin: left;
+  }
+
+  &Content {
+    @apply w-full h-full p-[2.372vw] pr-[3.321vw] flex flex-col justify-between items-start;
+  }
+
+  &Title {
+    @apply text-[2.372vw] font-medium max-w-[85%] w-full uppercase;
+    line-height: 125%;
+  }
+
+  &Info {
+    @apply flex flex-col gap-[2.5vh];
+  }
+
+  &Link {
+    @apply flex items-center gap-[0.474vw] uppercase;
+  }
+}

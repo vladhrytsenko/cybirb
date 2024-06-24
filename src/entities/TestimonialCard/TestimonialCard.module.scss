@@ -1,0 +1,62 @@
+.testimonialCard {
+  @apply h-full w-full;
+
+  &Bg {
+    @apply w-full h-full absolute pointer-events-none top-0 left-0 z-[-1];
+
+    svg {
+      @apply w-full h-full;
+    }
+  }
+
+  &Content {
+    @apply px-[2.372vw] pt-[5.75vh] pb-[4.3vh] w-full h-full flex flex-col justify-between;
+  }
+
+  &Head {
+    @apply flex items-center justify-between;
+
+    .logo {
+      @apply max-w-[9.490vw] w-full max-h-[2.1vh] h-full object-contain object-left;
+    }
+  }
+
+  &Link {
+    @apply flex items-center gap-[0.474vw] uppercase text-[0.712vw];
+  }
+
+  &Text {
+    @apply text-[1.186vw] normal-case;
+    line-height: 145%;
+    color: $light-gray;
+  }
+
+  &Author {
+    @apply flex items-center gap-[0.593vw];
+
+    &Position {
+      @apply text-[0.712vw] font-medium;
+      color: $light-gray;
+      line-height: 116%;
+    }
+
+    &Name {
+      @apply text-[0.830vw] font-medium uppercase;
+      line-height: 145%;
+    }
+
+    &Photo {
+      @apply w-[2.966vw] min-w-[2.966vw] h-[2.966vw] min-h-[2.966vw];
+
+      clip-path: url(#testimonial-photo-clip);
+
+      img {
+        @apply w-full h-full object-cover object-center;
+      }
+    }
+
+    &Info {
+      @apply flex flex-col gap-[0.4vh];
+    }
+  }
+}

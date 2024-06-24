@@ -1,0 +1,21 @@
+.joinBrigade {
+  @apply h-fit;
+
+  div[class='section-title-block'] {
+    @apply max-w-[35vw] w-full;
+  }
+
+  &TextBlock {
+    @apply max-w-[30vw] w-full;
+  }
+
+  &Cards {
+    @apply flex gap-[1.186vw] mt-[12vh];
+
+    > div {
+      &:nth-child(3) {
+        @apply mt-[24vh];
+      }
+    }
+  }
+}

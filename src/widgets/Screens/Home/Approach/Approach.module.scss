@@ -1,0 +1,29 @@
+.approach {
+  @apply overflow-hidden h-fit;
+
+  &TextBlock {
+    @apply ml-auto mt-[16.25vh] max-w-[30.546vw] w-full;
+  }
+
+  &Head {
+    @apply mt-[10.8vh] pb-[6.5vh] relative;
+
+    &Bg {
+      @apply absolute top-0 left-0 w-full h-full;
+    }
+
+    div[class='line'] {
+      &::before {
+        background: #151515;
+      }
+    }
+
+    div[class*='container'] {
+      @apply pt-[5.4vh];
+    }
+  }
+
+  .ticker {
+    @apply translate-x-[2%] translate-y-[22.5%];
+  }
+}

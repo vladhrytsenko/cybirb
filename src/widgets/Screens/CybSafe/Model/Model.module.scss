@@ -1,0 +1,7 @@
+.model {
+  @apply h-fit bg-[#151515];
+
+  div[class*='container'] {
+    @apply min-h-[80vh];
+  }
+}

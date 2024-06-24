@@ -1,0 +1,11 @@
+.blog {
+  @apply h-fit;
+
+  &TextBlock {
+    @apply max-w-[30.546vw] w-full;
+  }
+
+  &Cards {
+    @apply mt-[15vh] w-full flex h-[60vh];
+  }
+}

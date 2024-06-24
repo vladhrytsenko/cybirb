@@ -1,0 +1,80 @@
+.methodology {
+  @apply h-fit;
+
+  div[class*='container'] {
+    @apply pl-0;
+  }
+
+  div[class='section-text-group'] {
+    @apply items-center;
+  }
+
+  div[class='section-head'] {
+    @apply ml-[3.559vw];
+  }
+
+  div[class='section-text-group'] {
+    @apply pl-[3.559vw];
+  }
+
+  &Slider {
+    @apply h-[65vh] mt-[10.8vh];
+
+    &Arrows {
+      @apply flex items-center gap-[0.593vw];
+    }
+
+    &Slide {
+      @apply w-full relative p-[2.966vw];
+
+      max-width: 67.616vw !important;
+      width: 100% !important;
+
+      &:first-child {
+        margin-left: 3.559vw !important;
+      }
+
+      &Bg {
+        @apply absolute left-0 top-0 w-full h-full pointer-events-none z-[-1];
+
+        svg {
+          @apply w-full h-full;
+        }
+      }
+
+      &Content {
+        @apply w-full h-full flex items-stretch justify-between;
+
+        .slideImage {
+          @apply h-full max-w-[25vw] w-full relative;
+
+          img {
+            @apply w-full h-full object-contain object-center;
+          }
+        }
+
+        .slideTextInfo {
+          @apply max-w-[30vw] w-full flex flex-col gap-[3.25vh] justify-end items-start relative pb-[6.5vh];
+
+          div[class='card-number'] {
+            @apply absolute top-0 right-0;
+          }
+        }
+      }
+    }
+
+    &Arrow {
+      @apply w-[5.338vw] h-[6vh] relative cursor-pointer;
+
+      &Bg {
+        @apply w-full h-full absolute top-0 left-0 pointer-events-none z-[-1];
+        scale: 1 1.15;
+        transform-origin: top;
+      }
+
+      &Icon {
+        @apply w-[0.949vw] h-[2.7vh] absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%];
+      }
+    }
+  }
+}

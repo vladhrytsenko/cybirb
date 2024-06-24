@@ -1,0 +1,35 @@
+.featureCard {
+  @apply p-[1.779vw] w-full h-full;
+
+  &Content {
+    @apply w-full h-full flex flex-col justify-start gap-[5.5vh] items-start;
+  }
+
+  &Icon {
+    @apply w-[5.931vw] h-[5.931vw];
+
+    img {
+      @apply w-full h-full object-center object-contain;
+    }
+  }
+
+  &Link {
+    @apply mt-auto flex items-center gap-[0.474vw] text-[0.712vw];
+    line-height: 116.6%;
+  }
+
+  &Title {
+    @apply text-[1.423vw] font-medium capitalize;
+    line-height: 108%;
+  }
+
+  &Text {
+    @apply flex flex-col gap-[0.975vh];
+    line-height: 145%;
+    color: $light-gray;
+
+    p {
+      @apply text-[0.949vw] first-letter:uppercase;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.serviceCard {
+  @apply transition-colors duration-500 min-w-[23.428vw] w-[23.428vw] min-h-[43.3vh] h-[43.3vh] p-[0.059vw];
+
+  background-color: $stroke;
+
+  &:hover {
+    background-color: $blue;
+
+    .serviceCardIcon {
+      @apply opacity-100;
+    }
+
+    .serviceCardContent {
+      background-color: $blue;
+    }
+  }
+
+  .clip {
+    @apply opacity-0 z-[-1] pointer-events-none absolute;
+  }
+
+  &Content {
+    @apply w-full h-full p-[1.779vw] flex flex-col justify-between items-start relative transition-colors duration-500;
+
+    background-color: $dark;
+  }
+
+  &Info {
+    @apply flex flex-col items-start;
+  }
+
+  &Title {
+    @apply text-[1.423vw] font-medium;
+    line-height: 145%;
+  }
+
+  &Category {
+    @apply text-[0.830vw] font-medium mt-[2.16vh] mb-[1.3vh];
+    line-height: 145%;
+  }
+
+  &Text {
+    @apply text-[0.949vw];
+    line-height: 131%;
+  }
+
+  &Icon {
+    @apply w-[8vw] h-[8vw] absolute bottom-[1.483vw] right-[1.483vw] opacity-50 transition-opacity duration-500;
+
+    img {
+      @apply w-full h-full object-contain object-center;
+    }
+  }
+
+  &Link {
+    @apply text-[0.712vw] font-medium uppercase flex items-center gap-[0.474vw];
+    line-height: 116.6%;
+  }
+}

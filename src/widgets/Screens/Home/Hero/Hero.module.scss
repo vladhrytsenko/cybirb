@@ -1,0 +1,188 @@
+.hero {
+  div[class='container'] {
+    @apply pt-[13vh] py-[2vh];
+  }
+
+  &Ticker {
+    @apply translate-y-1/2;
+  }
+
+  &Wrapper {
+    @apply w-full h-full overflow-hidden flex gap-[3.440vw];
+  }
+
+  &SectionLabel {
+    @apply flex flex-col gap-[0.5vh] w-fit overflow-hidden;
+
+    span {
+      @apply text-[0.7vw] uppercase;
+    }
+
+    .strip {
+      @apply w-full h-[0.36vw] flex;
+
+      svg {
+        @apply w-full h-auto;
+      }
+    }
+  }
+
+  &TextBlock {
+    @apply flex flex-col gap-[2.1vh] flex-[0.67] justify-center;
+  }
+
+  &Join {
+    @apply flex-[0.325];
+
+    clip-path: url(#join-block-clip);
+
+    p {
+      @apply uppercase max-w-[22.835vw] w-full text-[0.949vw];
+      line-height: 145%;
+    }
+
+    &Content {
+      @apply p-[1.779vw] pr-[2.372vw] flex flex-col justify-between w-full h-full;
+
+      background-color: $dark;
+
+      clip-path: url(#join-block-clip);
+    }
+
+    &Row {
+      @apply flex items-center justify-between;
+
+      span {
+        @apply text-[0.830vw] uppercase;
+      }
+    }
+  }
+
+  &Block {
+    @apply flex flex-col;
+
+    &:nth-child(1) {
+      @apply flex-[0.45];
+    }
+
+    &:nth-child(2) {
+      @apply flex-[0.55] flex flex-col gap-[0.65vw];
+
+      .heroBlockInner {
+        @apply w-full flex gap-[0.65vw];
+
+        &:nth-child(1) {
+          @apply h-[70%];
+        }
+
+        &:nth-child(2) {
+          @apply h-[28%];
+        }
+      }
+    }
+
+    &Graph {
+      @apply w-full h-full flex-[0.8];
+
+      clip-path: url(#hero-graph-clip);
+
+      &SVG {
+        @apply w-[175%] h-[175%] translate-x-[-12.5%] translate-y-[4%];
+      }
+
+      &Content {
+        @apply w-full h-full overflow-hidden;
+        background-color: $dark;
+
+        clip-path: url(#hero-graph-clip);
+      }
+    }
+
+    .percents {
+      @apply bg-white py-[3vh] pl-[1.186vw] pr-[1.542vw] flex flex-col items-start justify-between flex-[0.2];
+
+      clip-path: url(#percents-clip);
+
+      span {
+        color: #1a1c1e;
+      }
+
+      &Animation {
+        @apply h-[22.8vh] w-[1.423vw];
+
+        svg {
+          @apply w-full h-full;
+        }
+      }
+
+      &Range {
+        @apply flex flex-col gap-[1.038vw] items-center;
+
+        span {
+          @apply font-bold uppercase text-[1.423vw] scale-[-1];
+          writing-mode: vertical-lr;
+          line-height: 145%;
+        }
+      }
+
+      &Label {
+        @apply font-bold uppercase;
+        line-height: 131.25%;
+      }
+    }
+
+    .scrollLabel {
+      @apply flex items-center justify-center bg-[#121314] flex-[0.25];
+    }
+
+    .dottedGrid {
+      @apply bg-white flex-[0.5];
+
+      background-size: 0.26vw * 2 0.26vw * 2, 2.604vw 2.604vw;
+      background-position: -5% -10%;
+      background-image: linear-gradient(
+          to bottom,
+          transparent 0.26vw,
+          #fff 0.26vw
+        ),
+        linear-gradient(to right, #595a5a 0.052vw, transparent 0.052vw),
+        linear-gradient(to right, transparent 0.26vw, #fff 0.26vw),
+        linear-gradient(to bottom, #595a5a 0.052vw, transparent 0.052vw);
+    }
+
+    .socials {
+      @apply flex flex-[0.25] items-center justify-center relative;
+
+      clip-path: url(#socials-clip);
+
+      &OutterWrapper {
+        @apply w-full h-full py-[2vh] px-[2.135vw];
+
+        background-color: $dark;
+        clip-path: url(#socials-clip);
+      }
+
+      &Wrapper {
+        @apply h-full;
+
+        clip-path: url(#socials-wrapper-clip);
+      }
+
+      &Content {
+        @apply w-full h-full flex flex-col items-center justify-center gap-[0.85vh] px-[1.661vw] py-[1.25vh];
+
+        background-color: $dark;
+
+        clip-path: url(#socials-wrapper-clip);
+      }
+
+      .social {
+        @apply w-[2.5vw] h-[2.5vw] min-w-[2.5vw] min-h-[2.5vw] rounded-full flex items-center justify-center;
+
+        .icon {
+          @apply w-[1.25vw] h-[1.25vw] object-contain object-center;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.dropdown {
+  @apply flex flex-col gap-[1.6vh] pb-[4vh];
+
+  &.active {
+    .dropdownArrow {
+      svg {
+        @apply rotate-180;
+      }
+    }
+
+    .dropdownBody {
+      @apply opacity-100;
+    }
+  }
+
+  &HeadTitle {
+    @apply flex items-center gap-[2.966vw];
+  }
+
+  &Title {
+    @apply text-[1.898vw] capitalize;
+    line-height: 112%;
+  }
+
+  &Arrow {
+    @apply flex items-center cursor-pointer;
+
+    svg {
+      @apply w-[0.816vw] h-[0.504vw] transition-transform duration-[400ms];
+    }
+  }
+
+  &Body {
+    @apply w-full flex flex-col items-end opacity-0 h-0 overflow-hidden;
+
+    transition: 0.45s ease;
+    transition-property: height, opacity;
+
+    &Content {
+      @apply max-w-[35.884vw] w-full;
+    }
+  }
+}

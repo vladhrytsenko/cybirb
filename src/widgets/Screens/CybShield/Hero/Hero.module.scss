@@ -1,0 +1,7 @@
+.hero {
+  @apply h-fit;
+
+  &Cards {
+    @apply mt-[11.1vh] w-full flex items-center gap-[1.186vw];
+  }
+}

@@ -1,0 +1,23 @@
+.blog {
+  @apply h-[80vh];
+
+  &Bg {
+    @apply absolute left-0 top-0 pointer-events-none z-[0] w-full h-full;
+
+    svg {
+      @apply w-full h-full;
+    }
+  }
+
+  &TextBlock {
+    @apply max-w-[30.546vw] w-full ml-auto;
+  }
+
+  div[class='section-text-group'] {
+    @apply h-full flex-col justify-between;
+  }
+}
+
+.blogTicker {
+  @apply translate-y-[22%];
+}

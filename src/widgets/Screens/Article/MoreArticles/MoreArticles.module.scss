@@ -1,0 +1,26 @@
+.moreArticles {
+  @apply h-fit;
+
+  div[class='section-text-group'] {
+    @apply items-center pl-[3.559vw];
+  }
+
+  div[class*='container'] {
+    @apply flex flex-col justify-between gap-[9.75vh] pl-0;
+  }
+
+  &Slider {
+    @apply w-full h-[58.5vh];
+  }
+
+  &Slide {
+    @apply flex;
+    width: 29vw !important;
+    height: 100%;
+    min-width: 29vw !important;
+
+    &:first-child {
+      margin-left: 3.559vw !important;
+    }
+  }
+}

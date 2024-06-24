@@ -1,0 +1,7 @@
+.faq {
+  @apply h-fit;
+
+  &List {
+    @apply w-full flex flex-col gap-[1vh];
+  }
+}

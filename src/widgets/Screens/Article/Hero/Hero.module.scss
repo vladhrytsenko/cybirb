@@ -1,0 +1,97 @@
+.hero {
+  div[class='container'] {
+    @apply flex items-end;
+  }
+
+  &Ticker {
+    @apply absolute left-0 top-0 translate-y-[85%] w-full;
+  }
+
+  &Wrapper {
+    @apply w-full flex gap-[1.186vw] h-[75vh] items-stretch pb-[1.3vh];
+  }
+
+  &ArticleInfo {
+    @apply w-[55%] relative py-[5.4vh] px-[1.8vw] flex flex-col items-start;
+
+    div[class='card-number']::before {
+      @apply w-[75%];
+    }
+
+    &TextBlock {
+      @apply mt-auto max-w-[28.173vw] w-full;
+    }
+
+    &Title {
+      @apply text-[2.847vw] uppercase font-medium mt-[1.95vh];
+      line-height: 116%;
+    }
+
+    &Bg {
+      @apply pointer-events-none absolute left-0 top-0 w-full h-full z-[-1];
+
+      svg {
+        @apply w-full h-full;
+      }
+    }
+  }
+
+  &ArticlePreview {
+    @apply w-[45%] rounded-[0.237vw] relative p-[1.779vw] overflow-hidden flex items-end justify-start;
+
+    &Socials {
+      @apply flex flex-col gap-[1vh] z-[2];
+    }
+
+    &Social {
+      @apply rounded-[0.297vw] flex items-center justify-center w-[3.559vw] h-[3.559vw];
+      background-color: $dark;
+      border: 0.059vw solid $gray;
+
+      img {
+        @apply w-[1.483vw] h-[1.483vw] object-contain object-center;
+      }
+    }
+
+    &Slider {
+      @apply w-full h-full absolute left-0 top-0 z-[-1];
+
+      position: absolute !important;
+
+      div[class*='swiper-pagination'] {
+        width: fit-content !important;
+        left: auto !important;
+        right: 1.779vw !important;
+        bottom: 1vw !important;
+        top: auto !important;
+      }
+
+      span[class*='swiper-pagination-bullet'] {
+        width: 0.593vw !important;
+        height: 0.593vw !important;
+        background: transparent !important;
+        border: 0.059vw solid #fff !important;
+        box-sizing: border-box !important;
+        transition: background-color 0.75s ease !important;
+        opacity: 1 !important;
+      }
+
+      span[class='swiper-pagination-bullet swiper-pagination-bullet-active'] {
+        width: 0.593vw !important;
+        height: 0.593vw !important;
+        background-color: #fff !important;
+        border: 0.059vw solid #fff !important;
+        box-sizing: border-box !important;
+        transition: background-color 0.75s ease !important;
+      }
+    }
+
+    &Thumbnail {
+      @apply w-full h-full;
+
+      img {
+        @apply object-cover object-center w-full h-full;
+      }
+    }
+  }
+}

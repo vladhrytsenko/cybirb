@@ -1,0 +1,62 @@
+.menu {
+  @apply fixed top-0 left-0 w-full min-h-screen max-h-screen overflow-y-scroll h-screen z-[5] px-[3.855vw] py-[12.8vh] transition-opacity duration-500 opacity-0 pointer-events-none flex items-center;
+
+  background-color: $dark;
+
+  &.active {
+    @apply opacity-100 pointer-events-auto;
+  }
+
+  &Bg {
+    @apply fixed left-0 top-0 w-full h-full pointer-events-none;
+
+    svg {
+      @apply w-full h-full;
+    }
+  }
+
+  &SideNumbers {
+    @apply flex flex-col justify-between z-[1] gap-[15.3vh];
+  }
+
+  &Links {
+    @apply flex flex-col gap-[4.5vh];
+  }
+
+  &Nav {
+    @apply flex flex-col gap-[3vh] items-center justify-center text-center;
+  }
+
+  &AccountOptions {
+    @apply flex gap-[4.152vw] items-center justify-center;
+  }
+
+  &AccoutOption {
+    @apply uppercase text-[0.830vw] font-medium;
+    color: $light-gray;
+    line-height: 185%;
+  }
+
+  &Contact {
+    @apply flex items-start justify-center gap-[8.304vw];
+
+    &Col {
+      @apply flex flex-col items-start gap-[1.2vh];
+
+      &Title {
+        @apply font-medium text-[0.830vw] uppercase;
+        line-height: 185%;
+        color: $light-gray;
+      }
+
+      &Link {
+        @apply text-[0.712vw] font-medium first-letter:uppercase;
+        line-height: 133%;
+      }
+    }
+  }
+
+  &Content {
+    @apply w-full my-auto flex items-center justify-between text-[0.712vw];
+  }
+}

@@ -1,0 +1,19 @@
+.partners {
+  @apply h-fit;
+
+  &Logos {
+    @apply w-full grid mt-[6.2vh];
+
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 0.593vw;
+    row-gap: 2vh;
+  }
+
+  &Logo {
+    @apply h-[9.5vh] max-w-[7.414vw] w-full mx-auto;
+
+    img {
+      @apply w-full h-full object-contain object-center;
+    }
+  }
+}

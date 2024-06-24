@@ -1,0 +1,7 @@
+.scrollLabel {
+  @apply w-[9.75vw] h-[9.75vw] flex items-center justify-center;
+
+  svg {
+    @apply w-full h-auto;
+  }
+}

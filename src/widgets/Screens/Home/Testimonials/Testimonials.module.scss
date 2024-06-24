@@ -1,0 +1,41 @@
+.testimonials {
+  @apply h-fit;
+
+  &TextBlock {
+    @apply max-w-[28.470vw] w-full;
+  }
+
+  &Cards {
+    @apply w-full mt-[16.25vh] pb-[5.4vh];
+
+    div[class*='swiper-scrollbar-horizontal'] {
+      @apply mx-auto max-w-[93vw] rounded-[1vw];
+
+      background-color: $gray;
+      height: 0.325vh !important;
+    }
+
+    div[class*='swiper-scrollbar-drag'] {
+      @apply mt-[6vh] bg-white rounded-[1vw];
+
+      height: 0.45vh !important;
+    }
+
+    div[class*='swiper-horizontal'] {
+      @apply w-full h-full;
+    }
+
+    div[class*='swiper-wrapper'] {
+      @apply h-[50vh];
+      overflow: unset !important;
+    }
+
+    div[class*='swiper-slide'] {
+      width: 30vw !important;
+
+      &:nth-child(1) {
+        @apply ml-[3.559vw];
+      }
+    }
+  }
+}

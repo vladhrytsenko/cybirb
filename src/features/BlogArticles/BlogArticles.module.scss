@@ -1,0 +1,66 @@
+.blogArticles {
+  @apply flex flex-col items-center justify-center gap-[6.5vh];
+
+  &Head {
+    @apply w-full flex items-center justify-between;
+  }
+
+  &Filter {
+    @apply flex items-center;
+  }
+
+  &Sort {
+    .blogArticlesActionTab {
+      @apply text-white;
+    }
+
+    svg {
+      path {
+        stroke: #fff;
+      }
+    }
+  }
+
+  &ActionTab {
+    @apply h-[3.7vh] px-[1.8vw] flex items-center justify-center text-[0.830vw] font-medium uppercase relative text-center transition-colors duration-500 cursor-pointer;
+    line-height: 145%;
+
+    color: #4f5050;
+
+    &:first-child {
+      @apply px-[2.5vw];
+    }
+
+    &.active {
+      color: $dark;
+
+      .blogArticlesActionTabBg {
+        svg {
+          path {
+            fill: #fff;
+            stroke: #fff;
+          }
+        }
+      }
+    }
+
+    &Bg {
+      @apply pointer-events-none z-[-1] absolute top-0 left-0 w-full h-full;
+
+      svg {
+        @apply w-full h-full;
+
+        path {
+          @apply transition-colors duration-500;
+        }
+      }
+    }
+  }
+
+  &Wrapper {
+    @apply grid grid-cols-3;
+    grid-template-rows: repeat(1, 60vh);
+    grid-auto-rows: 60vh;
+    row-gap: 3.25vh;
+  }
+}

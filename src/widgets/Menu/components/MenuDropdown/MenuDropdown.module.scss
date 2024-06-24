@@ -1,0 +1,52 @@
+.menuDropdown {
+  @apply relative flex flex-col items-center justify-start gap-[1.6vh] duration-500 delay-[250ms];
+
+  transition-property: color, height;
+
+  &.active {
+    @apply delay-0;
+
+    > .menuItemArrow {
+      span {
+        @apply rotate-[-90deg];
+      }
+    }
+
+    > .menuDropdownBody {
+      @apply opacity-100 pointer-events-auto delay-[500ms];
+    }
+  }
+
+  &Body {
+    @apply flex flex-col gap-[1.6vh] items-center justify-center text-center absolute bottom-[0] left-0 w-full py-[1.6vh] opacity-0 transition-opacity duration-500 pointer-events-none;
+
+    .menuItem {
+      @apply text-[1vw] w-full;
+
+      .menuItemArrow {
+        @apply translate-x-[1.75vw] text-[0.5vw];
+      }
+    }
+  }
+}
+
+.menuItem {
+  @apply uppercase text-[2.847vw] flex items-center relative cursor-default;
+  line-height: 100%;
+
+  &Title {
+    @apply transition-colors duration-500 w-full;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  &Arrow {
+    @apply text-white text-[0.949vw] cursor-pointer absolute right-[0] translate-x-[3.5vw] top-0;
+
+    span {
+      @apply transition-transform duration-500;
+    }
+  }
+}

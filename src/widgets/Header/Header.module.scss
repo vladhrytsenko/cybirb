@@ -1,0 +1,49 @@
+.header {
+  @apply py-[0.7vh] rounded-b-[0.297vw] fixed top-0 left-0 right-0 z-[5];
+
+  background-color: $dark;
+  border: 0.1vh solid $stroke;
+
+  transition: background-color, border-color;
+
+  &.menuActive {
+    @apply bg-transparent;
+    border-color: transparent;
+  }
+
+  &Nav {
+    @apply w-full flex items-center justify-between;
+  }
+
+  &Logo {
+    @apply w-[8.837vw] h-[5.2vh];
+  }
+
+  &Group {
+    @apply flex items-center gap-[2.372vw];
+  }
+
+  &MenuButton {
+    @apply text-[0.712vw] flex items-center gap-[0.712vw] uppercase;
+
+    &.active {
+      span {
+        &:nth-child(2) {
+          .first {
+            @apply rotate-[-75deg] translate-x-1/2;
+          }
+
+          .second {
+            @apply rotate-[15deg] translate-x-[-65%];
+          }
+        }
+      }
+    }
+
+    .icon {
+      > span {
+        @apply transition-transform duration-300;
+      }
+    }
+  }
+}

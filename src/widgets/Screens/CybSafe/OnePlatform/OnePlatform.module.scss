@@ -1,0 +1,17 @@
+.platform {
+  @apply h-fit;
+
+  .ticker {
+    @apply absolute top-[50%] left-0 w-full z-[2];
+  }
+
+  &Image {
+    @apply w-full h-[67vh] mt-[15.5vh] overflow-hidden relative;
+
+    clip-path: url(#cybsafe-platform-image);
+
+    img {
+      @apply w-full h-full object-cover object-center;
+    }
+  }
+}

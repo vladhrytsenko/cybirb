@@ -1,0 +1,21 @@
+.card {
+  @apply h-[24vh] flex flex-col gap-[3.25vh] text-center items-center justify-center flex-1 relative;
+
+  &Bg {
+    @apply absolute left-0 top-0 w-full h-full pointer-events-none z-[-1];
+
+    svg {
+      @apply w-full h-full;
+    }
+  }
+
+  &Title {
+    @apply text-[2.847vw] font-medium uppercase;
+  }
+
+  &Text {
+    @apply text-[1.186vw];
+    color: #7b7b7b;
+    line-height: 145%;
+  }
+}

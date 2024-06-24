@@ -1,0 +1,30 @@
+.ticker {
+  @apply relative;
+
+  &Row {
+    @apply flex flex-nowrap relative items-center w-full overflow-hidden;
+  }
+
+  &Text {
+    @apply text-[5vw] font-medium whitespace-nowrap uppercase items-center flex;
+    flex: 0 0 auto;
+    line-height: 100%;
+
+    animation: tickerAnim 30s linear 0s infinite;
+  }
+
+  &Background {
+    @apply absolute top-0 left-0 right-0 bottom-0 w-full h-[75%] translate-y-[-30%] translate-x-[-5%] z-[-1];
+  }
+}
+
+@keyframes tickerAnim {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}

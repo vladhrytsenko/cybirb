@@ -1,0 +1,73 @@
+.approachCard {
+  @apply flex-1 relative;
+
+  transition: 0.5s ease;
+  transition-property: flex, border-color;
+
+  border-right: 0.059vw solid $stroke;
+
+  &:nth-child(1) {
+    border-left: 0.059vw solid $stroke;
+  }
+
+  &Bg {
+    @apply absolute w-full h-full block top-0 left-0 pointer-events-none z-[-1] transition-opacity duration-[250ms] opacity-0;
+
+    svg {
+      @apply w-full h-full;
+    }
+  }
+
+  &:hover {
+    @apply flex-[3] delay-0 border-transparent;
+
+    .approachCardBg {
+      @apply opacity-100 duration-500 delay-[350ms];
+    }
+
+    .approachCardIcon {
+      @apply opacity-100 scale-[1] duration-500;
+    }
+
+    .approachCardMiddleTitle {
+      @apply opacity-100 delay-[500ms];
+    }
+
+    .approachCardBottomInfo .text {
+      @apply opacity-100 delay-[500ms] duration-500;
+    }
+
+    .approachCardBottomInfo .title {
+      @apply opacity-0;
+    }
+  }
+
+  &Content {
+    @apply w-full h-full p-[1.779vw] relative flex flex-col items-start justify-between;
+  }
+
+  &MiddleTitle {
+    @apply text-[2.135vw] font-medium uppercase absolute left-1/2 translate-x-[-50%] top-1/2 translate-y-[-50%] transition-opacity duration-500 opacity-0 z-[2];
+  }
+
+  &Icon {
+    @apply w-[12.456vw] h-[12.456vw] object-contain object-center absolute left-1/2 translate-x-[-50%] top-1/2 translate-y-[-50%] pointer-events-none select-none transition-all duration-[250ms] opacity-0 scale-[0.75];
+  }
+
+  &BottomInfo {
+    @apply relative;
+
+    .title {
+      @apply absolute left-0 bottom-0 z-[1] uppercase transition-opacity duration-500;
+    }
+
+    .text {
+      @apply max-w-[24.614vw] w-full transition-opacity duration-200 opacity-0;
+    }
+
+    span {
+      @apply text-[0.949vw];
+      line-height: 145%;
+    }
+  }
+}
