@@ -9,14 +9,14 @@ import { blogArticles } from '../../../../data'
 export const MoreArticles = () => {
   return (
     <section className={clsx('section', styles.moreArticles)}>
-      <div className="container space-top">
-        <div className="section-text-group">
-          <div className="section-title-block">
-            <span className="section-label">// may interest you</span>
+      <div className='container space-top'>
+        <div className='section-text-group'>
+          <div className='section-title-block'>
+            <span className='section-label'>// may interest you</span>
             <h3>More articles</h3>
           </div>
-          <div className={clsx('section-text-block', styles.blogTextBlock)}>
-            <Button type="link" href="/blog">
+          <div className={clsx('section-text-block', styles.seeAllDesktop)}>
+            <Button type='link' href='/blog'>
               View all
             </Button>
           </div>
@@ -25,8 +25,21 @@ export const MoreArticles = () => {
           <Swiper
             spaceBetween={20}
             speed={750}
-            slidesPerView={'auto'}
             modules={[FreeMode]}
+            breakpoints={{
+              0: {
+                slidesPerView: 1.15,
+              },
+              640: {
+                slidesPerView: 2.3,
+              },
+              1024: {
+                slidesPerView: 3.45,
+              },
+              2000: {
+                slidesPerView: 4.6,
+              },
+            }}
             className={styles.moreArticlesSlider}
           >
             {blogArticles.map((article, idx) => (
@@ -41,6 +54,11 @@ export const MoreArticles = () => {
               </SwiperSlide>
             ))}
           </Swiper>
+        </div>
+        <div className={styles.seeAllMobile}>
+          <Button type='link' href='/blog'>
+            View all
+          </Button>
         </div>
       </div>
     </section>

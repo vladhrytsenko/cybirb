@@ -8,6 +8,7 @@ import { CybTrace } from './CybTrace/CybTrace'
 import { CybWatch } from './CybWatch/CybWatch'
 import { Cybnest } from './Cybnest/Cybnest'
 import { Home } from './Home/Home'
+import { About } from './About/About'
 
 export const pages = [
   {
@@ -15,6 +16,12 @@ export const pages = [
     path: '/',
     element: <Home />,
     withPreloader: true,
+  },
+  {
+    title: 'About',
+    path: '/about',
+    element: <About />,
+    withPreloader: false,
   },
   {
     title: 'Blog',

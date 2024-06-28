@@ -21,10 +21,14 @@
 
   &Group {
     @apply flex items-center gap-[2.372vw];
+
+    .auditButton {
+      @apply hidden md:flex
+    }
   }
 
   &MenuButton {
-    @apply text-[0.712vw] flex items-center gap-[0.712vw] uppercase;
+    @apply text-[14px] md:text-[12px] flex items-center gap-[0.712vw] uppercase;
 
     &.active {
       span {

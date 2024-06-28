@@ -9,8 +9,8 @@ export const Hero = () => {
       <div className={styles.heroBg}>
         <HeroBg />
       </div>
-      <div className="container space-top space-bottom">
-        <div className="section-text-group">
+      <div className='container space-top space-bottom'>
+        <div className='section-text-group'>
           <div
             className={clsx(
               'section-title-block',
@@ -18,13 +18,13 @@ export const Hero = () => {
               styles.heroBlock
             )}
           >
-            <span className="section-label">// Cybirb’s Bug Bounty</span>
+            <span className='section-label'>// Cybirb’s Bug Bounty</span>
             <h4>
               CybNest: Building <br /> a Secure Web3 together
             </h4>
-            <div className="section-text-block">
+            <div className='section-text-block'>
               <p>
-                <div className="triangle"></div>
+                <div className='triangle'></div>
                 Hub for project owners and hackers to collaborate, identify
                 vulnerabilities, and improve the security of Web3 and Blockchain
                 projects. <br /> Harness the Collective Expertise of the World's
@@ -32,7 +32,7 @@ export const Hero = () => {
                 Uncover Vulnerabilities Ahead of the Curve.
               </p>
             </div>
-            <Button size="big">join now</Button>
+            <Button size='big'>join now</Button>
           </div>
           <div
             className={clsx(
@@ -41,7 +41,7 @@ export const Hero = () => {
               styles.heroBlock
             )}
           >
-            <span className="section-label">// Bug Bounty Platform</span>
+            <span className='section-label'>// Bug Bounty Platform</span>
             <h4>Cybirb’s Bug Bounty Platform offers.</h4>
             <div className={styles.heroStatistics}>
               <div className={styles.heroStatistic}>
@@ -57,7 +57,7 @@ export const Hero = () => {
                 </span>
               </div>
             </div>
-            <Button size="big">join now</Button>
+            <Button size='big'>join now</Button>
           </div>
         </div>
       </div>

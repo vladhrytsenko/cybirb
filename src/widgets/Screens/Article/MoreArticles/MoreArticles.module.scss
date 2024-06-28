@@ -2,22 +2,31 @@
   @apply h-fit;
 
   div[class='section-text-group'] {
-    @apply items-center pl-[3.559vw];
+    @apply items-center pl-[3.559vw] max-md:pt-0;
   }
 
   div[class*='container'] {
     @apply flex flex-col justify-between gap-[9.75vh] pl-0;
   }
 
+  .seeAllDesktop {
+    @apply max-md:hidden;
+  }
+
+  .seeAllMobile {
+    @apply md:hidden pl-[3.559vw];
+
+    a {
+      @apply w-[100%];
+    }
+  }
+
   &Slider {
-    @apply w-full h-[58.5vh];
+    @apply w-[100vw] h-[58.5vh];
   }
 
   &Slide {
-    @apply flex;
-    width: 29vw !important;
-    height: 100%;
-    min-width: 29vw !important;
+    @apply flex h-full;
 
     &:first-child {
       margin-left: 3.559vw !important;

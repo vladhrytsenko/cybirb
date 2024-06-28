@@ -10,10 +10,10 @@ const Header = () => {
 
   return (
     <header className={clsx(styles.header, menuActive && styles.menuActive)}>
-      <div className="container">
+      <div className='container'>
         <nav className={styles.headerNav}>
           <a
-            href="/"
+            href='/'
             onClick={(ev) => {
               if (currentPage === 'home') {
                 ev.preventDefault()
@@ -30,7 +30,9 @@ const Header = () => {
             <Logo />
           </a>
           <div className={styles.headerGroup}>
-            <Button>Request Aduit</Button>
+            <div className={styles.auditButton}>
+              <Button>Request Audit</Button>
+            </div>
             <button
               onClick={() =>
                 !menuActive ? setMenuActive(true) : setMenuActive(false)

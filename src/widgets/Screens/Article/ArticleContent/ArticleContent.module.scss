@@ -7,14 +7,14 @@
   }
 
   &Ticker {
-    @apply absolute bottom-0 w-full left-0 translate-y-full overflow-hidden;
+    @apply mx-[-3.559vw] mt-[clamp(54px,5.931vw,100px)];
   }
 
   &Block {
-    @apply ml-auto w-[55%];
+    @apply ml-auto md:w-[55%];
 
     p {
-      @apply text-[1.186vw] mt-[5.4vh] mb-[9vh];
+      @apply text-[clamp(16px,1.186vw,20px)] mt-[clamp(9px,2.966vw,49px)] mb-[clamp(32px,4.745vw,80px)];
       line-height: 145%;
       color: $light-gray;
     }
@@ -22,16 +22,20 @@
 
   &ViewAll {
     @apply flex items-center justify-center w-full;
+
+    button {
+      @apply max-sm:w-[100%];
+    }
   }
 
   &TopicTitle {
-    @apply max-w-[23.725vw] w-full;
+    @apply max-w-[clamp(325px,23.725vw,401px)] w-full;
 
     div[class='card-number'] {
-      @apply text-[1.423vw];
+      @apply text-[clamp(18px,1.423vw,24px)];
 
       &::before {
-        @apply max-w-[9vw] w-full h-[2.8vh];
+        @apply max-w-[clamp(160px,9vw,200px)] w-full h-[13px];
       }
     }
   }

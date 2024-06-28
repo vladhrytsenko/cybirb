@@ -34,7 +34,7 @@ body {
 }
 
 .link-arrow {
-  @apply w-[0.630vw] h-[1.7vh];
+  @apply w-[clamp(11px,0.630vw,13px)] h-[clamp(17px,1.7vh,20px)];
 
   &::before {
     content: '';
@@ -46,7 +46,7 @@ body {
 }
 
 .card-number {
-  @apply text-[0.949vw] relative w-fit font-medium;
+  @apply text-[16px] relative w-fit font-medium;
 
   &::before {
     content: '';
@@ -69,10 +69,10 @@ body {
 }
 
 .triangle {
-  @apply w-0 h-0 rotate-[-45deg] inline-block translate-y-[-100%] mr-[2vw];
-  border-left: 0.474vw solid transparent;
-  border-right: 0.474vw solid transparent;
-  border-bottom: 0.474vw solid #d9d9d9;
+  @apply w-0 h-0 rotate-[-45deg] inline-block translate-y-[-100%] mr-[40px] mb-[4px];
+  border-left: clamp(5px, 0.474vw, 7px) solid transparent;
+  border-right: clamp(5px, 0.474vw, 7px) solid transparent;
+  border-bottom: clamp(5px, 0.474vw, 7px) solid #d9d9d9;
 }
 
 .rounded-stroke {
@@ -97,7 +97,7 @@ body {
   @apply flex flex-col gap-[4.3vh];
 
   p {
-    @apply text-[1.068vw];
+    @apply text-[16px];
 
     color: $light-gray;
 
@@ -112,7 +112,7 @@ body {
 }
 
 .section-label {
-  @apply text-[0.830vw] uppercase absolute top-[-1.73vh] left-0 translate-y-[-100%] whitespace-nowrap;
+  @apply text-[14px] uppercase absolute top-[-1.73vh] left-0 translate-y-[-100%] whitespace-nowrap;
   line-height: 145%;
 }
 
@@ -170,7 +170,7 @@ h1 {
 }
 
 h2 {
-  font-size: 5.338vw !important;
+  font-size: clamp(48px, 5.338vw, 90px) !important;
 }
 
 h3 {
@@ -217,11 +217,11 @@ big {
   max-width: 100% !important;
 
   &.space-top {
-    @apply pt-[13vh];
+    @apply pt-[clamp(36px,5.931vw,100px)];
   }
 
   &.space-bottom {
-    @apply pb-[13vh];
+    @apply pb-[clamp(36px,5.931vw,100px)];
   }
 }
 

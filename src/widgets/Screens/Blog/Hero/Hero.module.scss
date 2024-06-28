@@ -1,5 +1,5 @@
 .blog {
-  @apply h-[80vh];
+  @apply h-[80vh] max-md:h-min;
 
   &Bg {
     @apply absolute left-0 top-0 pointer-events-none z-[0] w-full h-full;
@@ -9,8 +9,16 @@
     }
   }
 
+  .break {
+    @apply hidden lg:block;
+  }
+
+  &Content {
+    @apply mt-[60px] md:mt-0;
+  }
+
   &TextBlock {
-    @apply max-w-[30.546vw] w-full ml-auto;
+    @apply max-w-[515px] w-full ml-0 md:ml-auto max-md:mt-[40px];
   }
 
   div[class='section-text-group'] {

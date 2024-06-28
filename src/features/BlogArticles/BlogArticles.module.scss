@@ -6,12 +6,30 @@
   }
 
   &Filter {
-    @apply flex items-center;
+    @apply flex items-center w-[100%] sm:w-max;
+
+    .blogArticlesActionTab {
+      @apply w-[100%] sm:w-max;
+    }
+
+    div:not(:first-child) {
+      @apply hidden sm:flex;
+    }
   }
 
   &Sort {
+    @apply w-[100%] sm:w-max;
+
     .blogArticlesActionTab {
       @apply text-white;
+
+      .typeOne {
+        @apply hidden sm:flex w-[100%];
+      }
+
+      .typeTwo {
+        @apply sm:hidden;
+      }
     }
 
     svg {
@@ -22,7 +40,7 @@
   }
 
   &ActionTab {
-    @apply h-[3.7vh] px-[1.8vw] flex items-center justify-center text-[0.830vw] font-medium uppercase relative text-center transition-colors duration-500 cursor-pointer;
+    @apply h-[34px] px-[30px] flex items-center justify-center text-[14px] font-medium uppercase relative text-center transition-colors duration-500 cursor-pointer;
     line-height: 145%;
 
     color: #4f5050;
@@ -57,8 +75,17 @@
     }
   }
 
+  &More {
+    @apply w-[100%];
+
+    button {
+      @apply w-[100%];
+    }
+  }
+
   &Wrapper {
-    @apply grid grid-cols-3;
+    @apply grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-3;
+    width: 100%;
     grid-template-rows: repeat(1, 60vh);
     grid-auto-rows: 60vh;
     row-gap: 3.25vh;

@@ -83,8 +83,15 @@ export const BlogArticles = () => {
 
         <div className={styles.blogArticlesSort}>
           <div className={styles.blogArticlesActionTab}>
-            <div className={clsx(styles.blogArticlesActionTabBg)}>
+            <div
+              className={clsx(styles.blogArticlesActionTabBg, styles.typeOne)}
+            >
               <TabClip type={1} />
+            </div>
+            <div
+              className={clsx(styles.blogArticlesActionTabBg, styles.typeTwo)}
+            >
+              <TabClip type={2} />
             </div>
             Sort by
           </div>
@@ -114,7 +121,7 @@ export const BlogArticles = () => {
                 filteredArticlesData &&
                 setArticlesPerPage(filteredArticlesData.length)
               }
-              size="big"
+              size='big'
             >
               View all
             </Button>

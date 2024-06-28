@@ -6,6 +6,10 @@
 
     svg {
       @apply w-full h-full;
+
+      path:nth-child(2) {
+        @apply max-md:opacity-0;
+      }
     }
   }
 
@@ -31,11 +35,11 @@
   }
 
   &LeftBlock {
-    @apply max-w-[39vw];
+    @apply max-w-[39vw] max-md:max-w-[100%] max-md:pb-[40px] max-md:border-b-[1px] max-md:border-b-[#272629];
   }
 
   &RightBlock {
-    @apply max-w-[35vw];
+    @apply max-w-[35vw] max-md:max-w-[100%] max-md:mt-[70px] max-md:pb-[40px];
   }
 
   &Block {
@@ -47,7 +51,7 @@
   }
 
   div[class='section-text-group'] {
-    @apply w-full justify-between;
+    @apply w-full justify-between max-md:flex-col;
   }
 
   div[class='section-title-block'] {

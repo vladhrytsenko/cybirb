@@ -6,7 +6,7 @@
   }
 
   &Text {
-    @apply text-[5vw] font-medium whitespace-nowrap uppercase items-center flex;
+    @apply text-[clamp(28px,5vw,84px)] font-medium whitespace-nowrap uppercase items-center flex;
     flex: 0 0 auto;
     line-height: 100%;
 
