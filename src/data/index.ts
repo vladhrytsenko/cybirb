@@ -68,7 +68,7 @@ export const cybTraceFeatures = [
   {
     title: 'Real time transaction protection',
     text: [
-      'If you have a question before validating a transaction,we will be here to help you out.',
+      'If you have a question before validating a transaction, we will be here to help you out.',
     ],
     link: {
       title: 'Add CyBirb RTP',
@@ -93,7 +93,7 @@ export const cybTraceFeatures = [
   {
     title: 'Real-time assistance',
     text: [
-      'If you have a question before validating a transaction,we will be here to help you out.',
+      'If you have a question before validating a transaction, we will be here to help you out.',
     ],
     link: {
       title: 'Get your Web3 Wallet Audit',

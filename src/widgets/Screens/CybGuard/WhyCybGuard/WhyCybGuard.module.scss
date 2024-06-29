@@ -1,3 +1,11 @@
 .why {
   @apply h-fit;
+
+  div[class='section-head'] span {
+    @apply text-[clamp(14px,0.949vw,16px)];
+  }
+
+  .cardsContainer {
+    @apply grid grid-cols-3 max-sm:grid-cols-1 max-md:grid-cols-2 mt-[clamp(40px,5.338vw,90px)];
+  }
 }

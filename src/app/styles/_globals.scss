@@ -120,7 +120,7 @@ body {
   @apply relative flex items-center justify-between overflow-hidden py-[1.5vh] px-[0.593vw];
 
   &-icon {
-    @apply w-[1.483vw] h-[1.483vw];
+    @apply w-[clamp(16px,1.72vw,26px)] h-[clamp(16px,1.72vw,26px)];
 
     img {
       @apply w-full h-full object-contain object-center;
@@ -128,9 +128,10 @@ body {
   }
 
   .line {
-    @apply absolute top-0 left-0 w-full h-[1.5vh] rounded-[0.297vw] z-[0];
+    @apply absolute top-0 left-0 w-full h-[clamp(6px,0.593vw,10px)] rounded-[0.297vw] z-[0];
 
     border: 0.1vw solid #fff;
+    border-bottom: none;
 
     &::before {
       content: '';
@@ -139,12 +140,6 @@ body {
       background-color: $dark;
     }
   }
-}
-
-header {
-}
-
-footer {
 }
 
 section {
@@ -174,11 +169,11 @@ h2 {
 }
 
 h3 {
-  font-size: 3.796vw !important;
+  font-size: clamp(28px,3.796vw,64px) !important;
 }
 
 h4 {
-  font-size: 2.847vw !important;
+  font-size: clamp(24px, 2.847vw, 50px) !important;
 }
 
 h5 {

@@ -6,8 +6,11 @@
   }
 
   &Title {
-    @apply text-[2.847vw] uppercase font-medium;
-    line-height: 100%;
+    @apply text-[clamp(24px,2.847vw,48px)] uppercase font-medium;
+  }
+
+  a {
+    @apply w-[175px];
   }
 
   &Bg {

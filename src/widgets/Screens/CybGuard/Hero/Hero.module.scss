@@ -1,21 +1,47 @@
 .hero {
   @apply h-fit;
 
+  &Bg {
+    @apply absolute left-0 top-0 pointer-events-none w-full h-full z-[-1];
+    background-size: cover;
+    background-image: url('/images/CybGuard/DAppsFeatures/sub_guard_bg.png');
+  }
+
+  div[class='section-head'] {
+    @apply max-xl:mt-[30px] max-md:mt-[40px];
+  }
+
+  div[class='section-text-group'] {
+    @apply flex max-md:flex-col;
+  }
+
   div[class='section-text-block'] {
-    @apply max-w-[25.801vw] w-full;
+    @apply max-w-[437px] w-full mt-[clamp(40px,3.084vw,52px)];
+
+    a {
+      @apply max-[465px]:w-full;
+    }
   }
 
   div[class='section-title-block'] {
-    @apply max-w-[30vw] w-full;
+    @apply max-w-[clamp(300px,30vw,600px)] w-full;
   }
 
-  &Cards {
-    @apply flex gap-[1vw] mt-[12vh];
+  div[class='section-head'] span {
+    @apply text-[clamp(14px,0.949vw,16px)];
+  }
+
+  .desktopHeroCards {
+    @apply flex gap-[1vw] mt-[12vh] max-md:hidden;
 
     > div {
       &:nth-child(2) {
         @apply mt-[24vh];
       }
     }
+  }
+
+  .mobileHeroCards {
+    @apply grid grid-cols-2 md:hidden gap-[clamp(16px,1.186vw,20px)] mt-[clamp(36px,2.966vw,50px)];
   }
 }

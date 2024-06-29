@@ -1,6 +1,12 @@
 .documentation {
+  @apply h-min;
+
+  div[class='section-head'] span {
+    @apply text-[clamp(14px,0.949vw,16px)];
+  }
+
   &Wrapper {
-    @apply flex items-stretch gap-[3.559vw] pt-[6vh];
+    @apply flex items-stretch gap-[3.559vw] max-lg:flex-col pt-[6vh];
 
     > div {
       @apply flex-1;
@@ -17,30 +23,42 @@
     }
 
     .block {
-      @apply flex flex-col justify-between gap-[12.7vh];
+      @apply flex flex-col justify-between gap-[clamp(40px,7.117vw,120px)];
 
       .group {
         @apply flex flex-col gap-[4vh];
 
         div[class='section-text-block'] {
-          @apply max-w-[26.690vw] w-full;
+          @apply max-w-[26.690vw] w-full max-lg:max-w-[100%];
         }
       }
 
       .links {
-        @apply w-full grid;
-
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(1, 7vh);
-        grid-auto-rows: 7vh;
+        @apply w-full grid grid-cols-2 auto-rows-[clamp(50px,4.152vw,70px)] max-md:grid-cols-1;
 
         .link {
-          @apply text-[0.830vw] flex items-center justify-center uppercase relative;
+          @apply text-[14px] flex items-center justify-center uppercase relative;
+
+          &:last-child {
+            @apply max-md:hidden;
+          }
+
+          &:not(:last-child) svg:first-child {
+            @apply max-md:hidden;
+          }
+
+          &:not(:last-child) svg:last-child {
+            @apply md:hidden;
+          }
 
           &:hover {
             svg {
               path:nth-child(2) {
                 fill: $blue !important;
+              }
+
+              rect {
+                stroke: $blue !important;
               }
             }
           }

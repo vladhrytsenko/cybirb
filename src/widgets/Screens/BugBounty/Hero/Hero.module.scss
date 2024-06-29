@@ -17,13 +17,13 @@
     @apply flex flex-col items-start gap-[3.25vh] capitalize;
 
     &Title {
-      @apply text-[2.372vw] font-medium;
+      @apply text-[clamp(24px,2.372vw,40px)] font-medium;
 
       line-height: 90%;
     }
 
     &Text {
-      @apply text-[1.186vw];
+      @apply text-[clamp(14px,1.186vw,20px)];
 
       color: #7b7b7b;
       line-height: 145%;
@@ -35,7 +35,7 @@
   }
 
   &LeftBlock {
-    @apply max-w-[39vw] max-md:max-w-[100%] max-md:pb-[40px] max-md:border-b-[1px] max-md:border-b-[#272629];
+    @apply max-w-[39vw] max-md:mt-[28px] max-md:max-w-[100%] max-md:pb-[40px] max-md:border-b-[1px] max-md:border-b-[#272629];
   }
 
   &RightBlock {
@@ -44,6 +44,10 @@
 
   &Block {
     @apply flex flex-col gap-[3.25vh] w-full;
+
+    button {
+      @apply max-sm:w-[100%];
+    }
   }
 
   div[class*='container'] {

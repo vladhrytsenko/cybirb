@@ -2,11 +2,11 @@
   @apply p-[1.779vw] w-full h-full;
 
   &Content {
-    @apply w-full h-full flex flex-col justify-start gap-[5.5vh] items-start;
+    @apply w-full h-full flex flex-col justify-start max-sm:items-center gap-[clamp(24px,1.72vw,29px)] items-start;
   }
 
   &Icon {
-    @apply w-[5.931vw] h-[5.931vw];
+    @apply w-[clamp(70px,5.931vw,100px)] h-[clamp(70px,5.931vw,100px)];
 
     img {
       @apply w-full h-full object-center object-contain;
@@ -14,22 +14,21 @@
   }
 
   &Link {
-    @apply mt-auto flex items-center gap-[0.474vw] text-[0.712vw];
+    @apply mt-auto flex items-center gap-[0.474vw] text-[12px];
     line-height: 116.6%;
   }
 
   &Title {
-    @apply text-[1.423vw] font-medium capitalize;
+    @apply text-[clamp(20px,1.423vw,24px)] max-sm:text-center font-medium capitalize;
     line-height: 108%;
   }
 
   &Text {
     @apply flex flex-col gap-[0.975vh];
-    line-height: 145%;
     color: $light-gray;
 
     p {
-      @apply text-[0.949vw] first-letter:uppercase;
+      @apply text-[clamp(14px,0.949vw,18px)] max-sm:text-center first-letter:uppercase;
     }
   }
 }

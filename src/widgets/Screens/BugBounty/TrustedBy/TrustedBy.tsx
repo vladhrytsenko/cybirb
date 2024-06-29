@@ -1,12 +1,11 @@
-import clsx from 'clsx'
-import styles from './Partners.module.scss'
-import { partners } from '../../../../data'
-import Ticker from 'framer-motion-ticker'
 import React from 'react'
+import Ticker from 'framer-motion-ticker'
+import clsx from 'clsx'
+import styles from './TrustedBy.module.scss'
 
-export const Partners = () => {
+export const TrustedBy = () => {
   return (
-    <section className={clsx('section', styles.partners)}>
+    <section className={clsx('container', styles.trustedBy)}>
       <div className={styles.titleWrapper}>
         <div className={styles.horizontalLine} />
         <div className={styles.titleContainer}>

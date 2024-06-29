@@ -1,8 +1,8 @@
-.partners {
-  @apply h-fit;
+.trustedBy {
+  @apply pt-[60px];
 
   .titleWrapper {
-    @apply flex items-center w-full mt-[clamp(60px,5.931vw,100px)];
+    @apply flex items-center w-full;
 
     .horizontalLine {
       @apply flex-1 h-[1px] w-full bg-[#272629];

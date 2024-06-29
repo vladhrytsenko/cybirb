@@ -2,7 +2,11 @@
   @apply h-fit;
 
   div[class*='container'] {
-    @apply pl-0;
+    @apply px-0;
+  }
+
+  div[class='section-head'] span {
+    @apply text-[clamp(14px,0.949vw,16px)];
   }
 
   div[class='section-text-group'] {
@@ -10,28 +14,45 @@
   }
 
   div[class='section-head'] {
-    @apply ml-[3.559vw];
+    @apply mx-[3.559vw];
   }
 
   div[class='section-text-group'] {
     @apply pl-[3.559vw];
   }
 
+  .mobileArrows {
+    @apply sm:hidden mt-[20px];
+  }
+
+  .desktopArrows {
+    @apply max-sm:hidden;
+  }
+
   &Slider {
-    @apply h-[65vh] mt-[10.8vh];
+    @apply h-fit mt-[clamp(44px,6.287vw,106px)];
+
+    :global {
+      .swiper-slide {
+        height: auto;
+      }
+    }
 
     &Arrows {
-      @apply flex items-center gap-[0.593vw];
+      @apply flex items-center gap-[0.593vw] mx-[3.559vw];
     }
 
     &Slide {
       @apply w-full relative p-[2.966vw];
 
       max-width: 67.616vw !important;
-      width: 100% !important;
 
       &:first-child {
         margin-left: 3.559vw !important;
+      }
+
+      &:last-child {
+        margin-right: 3.559vw !important;
       }
 
       &Bg {
@@ -42,11 +63,19 @@
         }
       }
 
+      div[class='card-number'] {
+        @apply ml-auto mr-[2.966vw] max-sm:mr-[1.186vw];
+
+        &::before {
+          @apply max-sm:hidden;
+        }
+      }
+
       &Content {
-        @apply w-full h-full flex items-stretch justify-between;
+        @apply w-full h-full flex max-md:flex-col gap-[7.117vw] max-md:items-center items-stretch sm:justify-between;
 
         .slideImage {
-          @apply h-full max-w-[25vw] w-full relative;
+          @apply max-h-[clamp(270px,25vw,460px)] h-full max-w-[clamp(270px,25vw,460px)] w-full relative;
 
           img {
             @apply w-full h-full object-contain object-center;
@@ -54,7 +83,7 @@
         }
 
         .slideTextInfo {
-          @apply max-w-[30vw] w-full flex flex-col gap-[3.25vh] justify-end items-start relative pb-[6.5vh];
+          @apply max-w-[30vw] max-md:max-w-[100%] w-full flex flex-col gap-[3.25vh] justify-end items-start relative pb-[6.5vh];
 
           div[class='card-number'] {
             @apply absolute top-0 right-0;
@@ -64,7 +93,7 @@
     }
 
     &Arrow {
-      @apply w-[5.338vw] h-[6vh] relative cursor-pointer;
+      @apply w-[clamp(77px,5.338vw,89px)] h-[clamp(49px,6vh,56px)] relative cursor-pointer;
 
       &Bg {
         @apply w-full h-full absolute top-0 left-0 pointer-events-none z-[-1];
@@ -73,7 +102,7 @@
       }
 
       &Icon {
-        @apply w-[0.949vw] h-[2.7vh] absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%];
+        @apply w-[clamp(14px,0.949vw,16px)] h-[clamp(22px,2.7vh,25px)] absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%];
       }
     }
   }

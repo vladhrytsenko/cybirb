@@ -1,11 +1,27 @@
 .platformOffers {
   @apply h-fit;
 
-  div[class='section-title-block'] {
-    @apply max-w-[35vw] w-full;
+  .titleWrapper {
+    @apply flex items-center w-full;
+
+    .horizontalLine {
+      @apply flex-1 h-[1px] w-full bg-[#272629];
+    }
+
+    .titleContainer {
+      @apply flex items-center content-center relative w-fit h-[clamp(38px,2.728vw,46px)];
+
+      svg {
+        @apply h-full w-full;
+      }
+
+      .title {
+        @apply absolute left-0 top-0 w-full h-full text-center leading-[clamp(38px,2.728vw,46px)] text-[clamp(14px,1.186vw,20px)] uppercase;
+      }
+    }
   }
 
-  div[class='section-text-block'] {
-    @apply max-w-[28.470vw] w-full;
+  .cardsContainer {
+    @apply grid grid-cols-3 max-sm:grid-cols-1 max-md:grid-cols-2 pt-[clamp(40px,5.931vw,80px)];
   }
 }

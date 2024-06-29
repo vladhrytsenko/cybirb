@@ -1,5 +1,5 @@
 .card {
-  @apply h-[24vh] flex flex-col gap-[3.25vh] text-center items-center justify-center flex-1 relative;
+  @apply h-[24vh] flex flex-col gap-[3.25vh] p-[8px] text-center items-center justify-center flex-1 relative;
 
   &Bg {
     @apply absolute left-0 top-0 w-full h-full pointer-events-none z-[-1];
@@ -10,11 +10,11 @@
   }
 
   &Title {
-    @apply text-[2.847vw] font-medium uppercase;
+    @apply text-[clamp(24px,2.847vw,32px)] font-medium uppercase;
   }
 
   &Text {
-    @apply text-[1.186vw];
+    @apply text-[clamp(14px,1.186vw,20px)];
     color: #7b7b7b;
     line-height: 145%;
   }

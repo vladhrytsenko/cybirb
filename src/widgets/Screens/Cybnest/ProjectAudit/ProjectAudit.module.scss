@@ -2,7 +2,7 @@
   @apply h-fit;
 
   &TextBlock {
-    @apply max-w-[25.801vw] w-full;
+    @apply max-w-[437px] w-full;
   }
 
   div[class='section-text-group'] {
@@ -13,24 +13,32 @@
     @apply relative;
   }
 
+  div[class='section-head'] span {
+    @apply text-[clamp(14px,0.949vw,16px)];
+  }
+
   &Wrapper {
-    @apply w-full flex gap-[10vw] relative;
+    @apply w-full grid max-md:grid-cols-1 grid-cols-2 gap-[clamp(40px,7.711vw,130px)] relative;
 
     &::before {
-      @apply absolute left-1/2 top-0 bottom-0 h-full w-[0.059vw] bg-[#272629];
+      @apply absolute max-md:hidden left-1/2 top-0 bottom-0 h-full w-[0.059vw] bg-[#272629];
       content: '';
     }
   }
 
   .block {
     @apply flex-1;
+
+    div[class='section-head'] {
+      @apply hidden max-md:flex;
+
+      span {
+        @apply text-[clamp(14px,0.949vw,16px)];
+      }
+    }
   }
 
   &Cards {
-    @apply grid gap-[1.186vw] mt-[12vh];
-
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    grid-auto-rows: auto;
+    @apply grid grid-cols-2 gap-[clamp(16px,1.186vw,20px)] mt-[clamp(40px,4.152vw,70px)];
   }
 }
