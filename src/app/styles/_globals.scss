@@ -127,6 +127,10 @@ body {
     }
   }
 
+  span {
+    @apply text-[clamp(14px,0.949vw,16px)];
+  }
+
   .line {
     @apply absolute top-0 left-0 w-full h-[clamp(6px,0.593vw,10px)] rounded-[0.297vw] z-[0];
 

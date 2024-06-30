@@ -1,14 +1,20 @@
 .why {
   @apply h-fit;
 
+  div[class='section-head'] span {
+    @apply text-[clamp(14px,0.949vw,16px)];
+  }
+
   div[class='section-text-group'] {
+    @apply flex max-md:flex-col;
+
     div[class='section-text-block'] {
-      @apply max-w-[30vw] w-full;
+      @apply max-w-[478px] max-md:max-w-[100%] max-md:mt-[32px] w-full;
     }
   }
 
   &Image {
-    @apply w-full h-[67vh] my-[8vh] overflow-hidden;
+    @apply w-full h-[67vh] max-sm:max-h-[350px] my-[8vh] max-sm:my-[32px] overflow-hidden;
 
     clip-path: url(#cybwatch-audit-image);
 
@@ -18,14 +24,18 @@
   }
 
   &Entities {
-    @apply w-full flex flex-col gap-[10vh];
+    @apply w-full flex flex-col gap-[clamp(40px,5.931vw,100px)];
 
     h3 {
       @apply text-center;
     }
 
     .row {
-      @apply w-full flex items-start gap-[3.559vw];
+      @apply w-full flex max-md:flex-col items-start gap-[3.559vw];
+
+      div[class='section-text-block'] p {
+        @apply text-center;
+      }
     }
   }
 }

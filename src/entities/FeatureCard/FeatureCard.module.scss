@@ -1,5 +1,5 @@
 .featureCard {
-  @apply p-[1.779vw] w-full h-full;
+  @apply px-[1.779vw] py-[clamp(20px,1.779vw,40px)] w-full h-full;
 
   &Content {
     @apply w-full h-full flex flex-col justify-start max-sm:items-center gap-[clamp(24px,1.72vw,29px)] items-start;

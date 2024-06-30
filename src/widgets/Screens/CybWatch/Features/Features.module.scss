@@ -1,3 +1,11 @@
 .features {
   @apply h-fit;
+
+  div[class='section-head'] span {
+    @apply text-[clamp(14px,0.949vw,16px)];
+  }
+
+  .cards {
+    @apply grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 mt-[clamp(32px,5.931vw,100px)];
+  }
 }

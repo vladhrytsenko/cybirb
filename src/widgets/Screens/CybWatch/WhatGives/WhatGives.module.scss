@@ -1,3 +1,23 @@
 .what {
-  @apply h-[70vh];
+  @apply h-[70vh] max-lg:h-min;
+
+  div[class='section-head'] span {
+    @apply text-[clamp(14px,0.949vw,16px)];
+  }
+
+  .content {
+    @apply pt-[8vh] flex max-lg:flex-col justify-between items-center max-lg:items-start;
+
+    div[class='section-title-block'] {
+      @apply mr-[47px];
+    }
+
+    div[class='section-text-block'] {
+      @apply max-sm:gap-[16px];
+    }
+
+    .items {
+      @apply flex max-sm:flex-col gap-[47px] max-sm:gap-[16px] max-lg:my-[32px];
+    }
+  }
 }

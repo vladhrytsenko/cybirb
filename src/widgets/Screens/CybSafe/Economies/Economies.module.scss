@@ -1,3 +1,15 @@
 .economies {
   @apply h-fit;
+
+  div[class='section-text-group'] {
+    @apply h-full flex-col justify-between;
+  }
+
+  div[class='section-text-block'] {
+    @apply max-md:mt-[32px];
+  }
+
+  .cards {
+    @apply grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 mt-[50px] mb-[clamp(40px,5.931vw,100px)];
+  }
 }

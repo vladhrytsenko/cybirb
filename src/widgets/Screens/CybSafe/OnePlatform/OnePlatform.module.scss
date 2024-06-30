@@ -1,12 +1,16 @@
 .platform {
   @apply h-fit;
 
-  .ticker {
-    @apply absolute top-[50%] left-0 w-full z-[2];
+  div[class='section-text-group'] {
+    @apply max-md:flex-col;
+  }
+
+  div[class='section-text-block'] {
+    @apply max-w-[30vw] max-md:max-w-[100%] max-md:mt-[30px] w-full;
   }
 
   &Image {
-    @apply w-full h-[67vh] mt-[15.5vh] overflow-hidden relative;
+    @apply w-full h-[67vh] max-md:max-h-[350px] mt-[15.5vh] max-md:mt-[50px] overflow-hidden relative;
 
     clip-path: url(#cybsafe-platform-image);
 

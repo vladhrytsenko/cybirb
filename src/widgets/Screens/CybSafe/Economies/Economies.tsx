@@ -7,28 +7,28 @@ import { Banner } from '../../../../entities/Banner/Banner'
 export const Economies = () => {
   return (
     <section className={clsx('section', styles.economies)}>
-      <div className="container">
-        <div className="section-head">
-          <div className="line"></div>
+      <div className='container'>
+        <div className='section-head'>
+          <div className='line'></div>
           <span>[ 05 ]</span>
-          <div className="section-head-icon">
-            <img src="/images/icons/blog-head-icon.svg" alt="" />
+          <div className='section-head-icon'>
+            <img src='/images/icons/blog-head-icon.svg' alt='' />
           </div>
         </div>
-        <div className="section-text-group">
-          <div className="section-title-block">
-            <span className="section-label">// tokenomics</span>
+        <div className='section-text-group'>
+          <div className='section-title-block'>
+            <span className='section-label'>// tokenomics</span>
             <h3>Token Economies</h3>
           </div>
-          <div className="section-text-block">
+          <div className='section-text-block'>
             <p>
-              <div className="triangle"></div>
+              <div className='triangle'></div>
               Various aspects are assessed during <br /> a Tokenomics audit,
               including.
             </p>
           </div>
         </div>
-        <div className="features-grid">
+        <div className={styles.cards}>
           {cybSafeFeatures.map((feature) => (
             <FeatureCard
               title={feature.title}
@@ -37,14 +37,12 @@ export const Economies = () => {
             />
           ))}
         </div>
-        <div className="mt-[15vh]">
-          <Banner
-            title={`Protect your project's future with 
+        <Banner
+          title={`Protect your project's future with 
 a comprehensive tokenomics audit.`}
-            buttonTitle="Schedule CybSaf Audit"
-            href="#"
-          />
-        </div>
+          buttonTitle='Schedule CybSaf Audit'
+          href='#'
+        />
       </div>
     </section>
   )

@@ -2,6 +2,18 @@
   @apply h-fit bg-[#151515];
 
   div[class*='container'] {
-    @apply min-h-[80vh];
+    @apply flex flex-col py-[6vh] min-h-[80vh] max-md:min-h-min;
+  }
+
+  div[class='section-text-group'] {
+    @apply md:flex-1 max-md:flex-col;
+  }
+
+  div[class='section-text-block'] {
+    @apply mt-auto max-md:mt-[30px] max-w-[28vw] max-md:max-w-[100%] w-full;
+
+    button {
+      @apply max-sm:w-[100%];
+    }
   }
 }
