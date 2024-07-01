@@ -2,12 +2,12 @@
   @apply flex flex-col items-start;
 
   &Label {
-    @apply text-[0.712vw] uppercase mb-[1.5vh];
+    @apply text-[12px] uppercase mb-[1.5vh];
     line-height: 120%;
   }
 
   .input {
-    @apply relative w-[16vw] h-[4vh];
+    @apply relative w-[16vw] max-md:w-[60vw] h-[4vh];
 
     &Bg {
       @apply absolute left-0 top-0 z-[-1] w-full h-full pointer-events-none;
