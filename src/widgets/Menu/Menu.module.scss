@@ -16,11 +16,19 @@
   }
 
   &SideNumbers {
-    @apply flex flex-col justify-between z-[1] gap-[15.3vh];
+    @apply flex flex-col justify-between z-[1] gap-[15.3vh] max-sm:gap-[11.3vh];
+
+    span {
+      @apply text-[clamp(10px,0.712vw,12px)];
+    }
   }
 
   &Links {
-    @apply flex flex-col gap-[4.5vh];
+    @apply h-full flex flex-col max-sm:justify-between gap-[4.5vh];
+  }
+
+  .additionalBlock {
+    @apply sm:hidden;
   }
 
   &Nav {
@@ -28,35 +36,35 @@
   }
 
   &AccountOptions {
-    @apply flex gap-[4.152vw] items-center justify-center;
+    @apply flex gap-[4.152vw] items-center justify-center max-sm:hidden;
   }
 
   &AccoutOption {
-    @apply uppercase text-[0.830vw] font-medium;
+    @apply uppercase text-[14px] font-medium;
     color: $light-gray;
     line-height: 185%;
   }
 
   &Contact {
-    @apply flex items-start justify-center gap-[8.304vw];
+    @apply relative flex items-start justify-center gap-[8.304vw] z-[1];
 
     &Col {
       @apply flex flex-col items-start gap-[1.2vh];
 
       &Title {
-        @apply font-medium text-[0.830vw] uppercase;
+        @apply font-medium text-[14px] uppercase;
         line-height: 185%;
         color: $light-gray;
       }
 
       &Link {
-        @apply text-[0.712vw] font-medium first-letter:uppercase;
+        @apply text-[12px] font-medium first-letter:uppercase;
         line-height: 133%;
       }
     }
   }
 
   &Content {
-    @apply w-full my-auto flex items-center justify-between text-[0.712vw];
+    @apply w-full h-full flex items-center justify-between text-[0.712vw];
   }
 }

@@ -6,7 +6,7 @@
   }
 
   div[class='section-text-group'] {
-    @apply px-[3.559vw];
+    @apply px-[3.559vw] max-md:flex-col;
   }
 
   div[class*='container'] {
@@ -14,11 +14,11 @@
   }
 
   &TextBlock {
-    @apply max-w-[25.741vw] w-full;
+    @apply max-w-[25.741vw] max-md:max-w-full w-full max-md:mt-[40px];
   }
 
   &Cards {
-    @apply mt-[15vh] flex items-center  overflow-hidden;
+    @apply max-sm:hidden mt-[15vh] flex items-center  overflow-hidden;
 
     div[class='swiper-wrapper'] {
       @apply items-center flex;
@@ -32,6 +32,20 @@
       &:first-child {
         margin-left: 3.559vw !important;
       }
+    }
+  }
+
+  &CardsMobile {
+    @apply sm:hidden mt-[15vh] flex flex-col items-center px-[3.559vw] gap-[16px];
+
+    &GroupMobile {
+      @apply w-full flex flex-col gap-[1.423vw];
+      display: flex !important;
+      width: 100% !important;
+    }
+
+    button {
+      @apply w-[100%] h-[40px] mt-[24px];
     }
   }
 }

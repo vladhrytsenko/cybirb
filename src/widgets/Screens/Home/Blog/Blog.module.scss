@@ -1,11 +1,19 @@
 .blog {
   @apply h-fit;
 
+  div[class='section-text-group'] {
+    @apply max-md:flex-col;
+  }
+
   &TextBlock {
-    @apply max-w-[30.546vw] w-full;
+    @apply max-w-[30.546vw] max-md:max-w-full w-full max-md:mt-[40px];
+
+    a {
+      @apply max-sm:w-full max-sm:h-[40px];
+    }
   }
 
   &Cards {
-    @apply mt-[15vh] w-full flex h-[60vh];
+    @apply mt-[15vh] w-full flex max-sm:flex-col h-[60vh] max-sm:h-min max-sm:gap-[23px];
   }
 }

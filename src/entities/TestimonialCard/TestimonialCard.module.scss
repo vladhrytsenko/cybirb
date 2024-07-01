@@ -10,23 +10,27 @@
   }
 
   &Content {
-    @apply px-[2.372vw] pt-[5.75vh] pb-[4.3vh] w-full h-full flex flex-col justify-between;
+    @apply px-[clamp(16px,2.372vw,32px)] pt-[5.75vh] pb-[4.3vh] w-full h-full flex flex-col justify-between max-md:gap-[40px];
   }
 
   &Head {
     @apply flex items-center justify-between;
 
     .logo {
-      @apply max-w-[9.490vw] w-full max-h-[2.1vh] h-full object-contain object-left;
+      @apply w-[158px] h-[22px] object-contain object-left;
     }
   }
 
   &Link {
-    @apply flex items-center gap-[0.474vw] uppercase text-[0.712vw];
+    @apply flex items-center gap-[0.474vw] uppercase text-[12px] max-md:hidden;
+  }
+
+  &LinkMobile {
+    @apply flex items-center gap-[0.474vw] uppercase text-[12px] md:hidden;
   }
 
   &Text {
-    @apply text-[1.186vw] normal-case;
+    @apply text-[clamp(16px,1.186vw,20px)] normal-case;
     line-height: 145%;
     color: $light-gray;
   }
@@ -35,18 +39,18 @@
     @apply flex items-center gap-[0.593vw];
 
     &Position {
-      @apply text-[0.712vw] font-medium;
+      @apply text-[12px] font-medium;
       color: $light-gray;
       line-height: 116%;
     }
 
     &Name {
-      @apply text-[0.830vw] font-medium uppercase;
+      @apply text-[14px] font-medium uppercase;
       line-height: 145%;
     }
 
     &Photo {
-      @apply w-[2.966vw] min-w-[2.966vw] h-[2.966vw] min-h-[2.966vw];
+      @apply w-[2.966vw] min-w-[50px] h-[2.966vw] min-h-[50px];
 
       clip-path: url(#testimonial-photo-clip);
 

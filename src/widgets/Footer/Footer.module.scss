@@ -2,11 +2,11 @@
   @apply h-fit py-[5.4vh] px-[3.559vw];
 
   &Main {
-    @apply w-full flex items-start justify-between relative;
+    @apply w-full flex max-md:flex-col items-start justify-between relative;
   }
 
   &Bottom {
-    @apply pt-[6vh] flex items-center justify-between gap-[3.262vw];
+    @apply pt-[6vh] flex items-center justify-between gap-[3.262vw] max-md:hidden;
 
     span {
       @apply text-[0.830vw] capitalize;
@@ -23,7 +23,7 @@
   }
 
   &Content {
-    @apply w-full h-full pt-[8.6vh] pb-[3.25vh] px-[2.372vw] relative flex flex-col items-stretch;
+    @apply w-full h-full pt-[8.6vh] pb-[3.25vh] px-[2.372vw] relative flex flex-col items-stretch max-md:p-0;
 
     &Bg {
       @apply absolute w-full h-full top-0 left-0 pointer-events-none z-[-1];
@@ -35,31 +35,37 @@
   }
 
   &Body {
-    @apply flex gap-[1.423vw];
+    @apply flex gap-[1.423vw] max-md:flex-col max-md:w-full;
   }
 
   &Column {
-    @apply pl-[1.186vw] pr-[1.423vw];
+    @apply pl-[1.186vw] pr-[1.423vw] max-md:w-full max-md:p-[12px];
+
+    @media (max-width: 640px)  {
+      border-bottom: 0.7px solid #595A5A;
+    }
   }
 
   &List {
-    @apply text-[0.949vw] flex flex-col items-start gap-[1.7vh];
+    @apply flex flex-col items-start gap-[1.7vh] max-md:w-full max-md:items-center;
 
     &Title {
-      @apply uppercase;
+      @apply text-[clamp(16px,0.949vw,18px)] uppercase max-md:text-center;
       line-height: 145%;
     }
 
     ul {
-      @apply flex flex-col items-start gap-[1.5vh];
+      @apply flex flex-col items-start gap-[1.5vh] max-md:items-center;
     }
 
     &Item {
+      @apply max-md:text-center;
+
       a {
-        @apply normal-case first-letter:capitalize flex items-center gap-[0.237vw];
+        @apply text-[clamp(14px,0.949vw,18px)] normal-case first-letter:capitalize flex items-center gap-[0.237vw] max-md:text-center;
 
         svg {
-          @apply min-w-[1.75vw] w-[1.75vw] h-[2vh];
+          @apply min-w-[32px] w-[32px] h-[24px];
         }
 
         color: $light-gray;
@@ -69,6 +75,18 @@
   }
 
   &Logo {
-    @apply w-[5vw] h-[10.8vh];
+    @apply max-md:hidden w-[5vw] h-[10.8vh];
+  }
+
+  &LogoWrapper {
+    @apply md:hidden flex items-center justify-center w-full p-[24px];
+
+    @media (max-width: 640px)  {
+      border-bottom: 0.7px solid #595A5A;
+    }
+
+    .logo {
+      @apply md:hidden w-[104px] h-[27px];
+    }
   }
 }

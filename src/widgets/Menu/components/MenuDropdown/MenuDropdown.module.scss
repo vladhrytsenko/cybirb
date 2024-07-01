@@ -31,11 +31,11 @@
 }
 
 .menuItem {
-  @apply uppercase text-[2.847vw] flex items-center relative cursor-default;
+  @apply uppercase flex items-center relative cursor-default;
   line-height: 100%;
 
   &Title {
-    @apply transition-colors duration-500 w-full;
+    @apply text-[clamp(20px,2.847vw,48px)] transition-colors duration-500 w-full;
 
     &:hover {
       color: $blue;
@@ -43,7 +43,7 @@
   }
 
   &Arrow {
-    @apply text-white text-[0.949vw] cursor-pointer absolute right-[0] translate-x-[3.5vw] top-0;
+    @apply text-white text-[clamp(14px,0.949vw,16px)] cursor-pointer absolute right-[0] translate-x-[40px] top-0;
 
     span {
       @apply transition-transform duration-500;

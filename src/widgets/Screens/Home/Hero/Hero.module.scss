@@ -1,4 +1,6 @@
 .hero {
+  @apply max-md:h-min;
+
   div[class='container'] {
     @apply pt-[13vh] py-[2vh];
   }
@@ -8,18 +10,18 @@
   }
 
   &Wrapper {
-    @apply w-full h-full overflow-hidden flex gap-[3.440vw];
+    @apply w-full h-full overflow-hidden flex max-md:flex-col gap-[3.440vw];
   }
 
   &SectionLabel {
     @apply flex flex-col gap-[0.5vh] w-fit overflow-hidden;
 
     span {
-      @apply text-[0.7vw] uppercase;
+      @apply text-[10px] uppercase;
     }
 
     .strip {
-      @apply w-full h-[0.36vw] flex;
+      @apply w-full h-[5px] flex;
 
       svg {
         @apply w-full h-auto;
@@ -32,7 +34,7 @@
   }
 
   &Join {
-    @apply flex-[0.325];
+    @apply flex-[0.325] max-md:hidden;
 
     clip-path: url(#join-block-clip);
 
@@ -58,6 +60,18 @@
     }
   }
 
+  &JoinMobile {
+    @apply md:hidden;
+
+    div[class='section-text-block'] {
+      @apply mt-[29px];
+    }
+
+    button {
+      @apply mt-[40px] max-sm:w-[100%] h-[40px];
+    }
+  }
+
   &Block {
     @apply flex flex-col;
 
@@ -72,11 +86,11 @@
         @apply w-full flex gap-[0.65vw];
 
         &:nth-child(1) {
-          @apply h-[70%];
+          @apply h-[70%] max-sm:flex-col;
         }
 
         &:nth-child(2) {
-          @apply h-[28%];
+          @apply h-[28%] max-sm:hidden;
         }
       }
     }
@@ -87,7 +101,7 @@
       clip-path: url(#hero-graph-clip);
 
       &SVG {
-        @apply w-[175%] h-[175%] translate-x-[-12.5%] translate-y-[4%];
+        @apply w-[175%] h-[175%] max-sm:max-h-[350px] translate-x-[-12.5%] translate-y-[4%];
       }
 
       &Content {
@@ -99,9 +113,13 @@
     }
 
     .percents {
-      @apply bg-white py-[3vh] pl-[1.186vw] pr-[1.542vw] flex flex-col items-start justify-between flex-[0.2];
+      @apply bg-white py-[3vh] pl-[1.186vw] pr-[1.542vw] flex flex-col max-sm:flex-col-reverse items-start justify-between flex-[0.2] gap-[12px];
 
       clip-path: url(#percents-clip);
+
+      @media (max-width:640px)  {
+        transform: scale(1, -1);
+      }
 
       span {
         color: #1a1c1e;
@@ -115,19 +133,42 @@
         }
       }
 
+      &AnimationMobile {
+        @apply w-[210px] h-[12px] flex flex-row-reverse;
+
+        svg {
+          @apply w-full h-full;
+        }
+      }
+
       &Range {
-        @apply flex flex-col gap-[1.038vw] items-center;
+        @apply max-sm:hidden flex flex-col gap-[1.038vw] items-center;
 
         span {
-          @apply font-bold uppercase text-[1.423vw] scale-[-1];
+          @apply font-bold uppercase text-[clamp(16px,1.423vw,24px)] scale-[-1];
           writing-mode: vertical-lr;
           line-height: 145%;
         }
       }
 
+      &RangeMobile {
+        @apply sm:hidden flex flex-row gap-[1.038vw] items-center;
+
+        span {
+          @apply font-bold uppercase text-[clamp(20px,1.423vw,24px)] mr-[12px];
+          transform: scale(1, -1);
+          line-height: 70%;
+        }
+      }
+
       &Label {
-        @apply font-bold uppercase;
+        @apply font-bold uppercase text-[14px];
         line-height: 131.25%;
+
+        @media (max-width:640px)  {
+          transform: scale(1, -1);
+          width: 226px;
+        }
       }
     }
 
@@ -184,5 +225,13 @@
         }
       }
     }
+  }
+
+  &Cards {
+    @apply max-md:hidden grid grid-cols-4 mt-[clamp(25px,4.745vw,80px)];
+  }
+
+  &CardsMobile {
+    @apply md:hidden grid grid-cols-2 gap-[20px] mt-[clamp(25px,4.745vw,80px)];
   }
 }

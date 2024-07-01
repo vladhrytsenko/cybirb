@@ -1,5 +1,5 @@
 .approachCard {
-  @apply flex-1 relative;
+  @apply flex-1 h-full relative;
 
   transition: 0.5s ease;
   transition-property: flex, border-color;
@@ -47,11 +47,11 @@
   }
 
   &MiddleTitle {
-    @apply text-[2.135vw] font-medium uppercase absolute left-1/2 translate-x-[-50%] top-1/2 translate-y-[-50%] transition-opacity duration-500 opacity-0 z-[2];
+    @apply text-[clamp(28px,2.135vw,36px)] font-medium uppercase absolute left-1/2 translate-x-[-50%] top-1/2 translate-y-[-50%] transition-opacity duration-500 opacity-0 z-[2];
   }
 
   &Icon {
-    @apply w-[12.456vw] h-[12.456vw] object-contain object-center absolute left-1/2 translate-x-[-50%] top-1/2 translate-y-[-50%] pointer-events-none select-none transition-all duration-[250ms] opacity-0 scale-[0.75];
+    @apply w-[clamp(160px,12.278vw,207px)] h-[clamp(187px,14.887vw,251px)] object-contain object-center absolute left-1/2 translate-x-[-50%] top-1/2 translate-y-[-50%] pointer-events-none select-none transition-all duration-[250ms] opacity-0 scale-[0.75];
   }
 
   &BottomInfo {
@@ -62,12 +62,35 @@
     }
 
     .text {
-      @apply max-w-[24.614vw] w-full transition-opacity duration-200 opacity-0;
+      @apply max-w-[24.614vw] max-md:max-w-[100%] w-full transition-opacity duration-200 opacity-0;
     }
 
     span {
-      @apply text-[0.949vw];
-      line-height: 145%;
+      @apply text-[16px];
     }
+  }
+}
+
+.openCard {
+  @apply flex-[3] border-transparent;
+
+  .approachCardBg {
+    @apply opacity-100;
+  }
+
+  .approachCardIcon {
+    @apply opacity-100 scale-[1];
+  }
+
+  .approachCardMiddleTitle {
+    @apply opacity-100;
+  }
+
+  .approachCardBottomInfo .text {
+    @apply opacity-100;
+  }
+
+  .approachCardBottomInfo .title {
+    @apply opacity-0;
   }
 }

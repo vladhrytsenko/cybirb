@@ -30,6 +30,50 @@
   }
 
   .cards {
-    @apply grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 mt-[50px];
+    @apply grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 mt-[50px];
+  }
+
+  .approach {
+    @apply relative h-fit mx-[-3.559vw] mt-[clamp(48px,3.559vw,60px)];
+
+    line {
+      @apply max-md:hidden;
+    }
+
+    div[class='section-text-group'] {
+      @apply md:flex-1 max-md:flex-col items-start;
+    }
+
+    div[class='section-text-block'] {
+      @apply mt-auto max-md:mt-[30px] max-w-[515px] max-md:max-w-[100%] w-full;
+    }
+
+    &Bg {
+      @apply w-full h-full absolute top-0 left-0 pointer-events-none z-[-1];
+    }
+
+    div[class*='container'] {
+      @apply md:min-h-[70vh] flex flex-col pt-[5vh] pb-[10vh];
+    }
+  }
+
+  .tickerContainer {
+    @apply mx-[-3.559vw];
+  }
+
+  .content {
+    @apply flex flex-col mt-[clamp(44px,5.931vw,100px)];
+
+    div[class='section-text-group'] {
+      @apply gap-[clamp(16px,3.618vw,61px)] max-md:flex-col items-start;
+
+      div[class='section-text-block'] {
+        @apply flex-1 max-md:mt-0;
+
+        p {
+          @apply max-md:text-center;
+        }
+      }
+    }
   }
 }

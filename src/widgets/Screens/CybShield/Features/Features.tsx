@@ -4,6 +4,7 @@ import { cybShieldFeatures } from '../../../../data'
 import { FeatureCard } from '../../../../entities/FeatureCard/FeatureCard'
 import { ApproachCards } from '../../../../features/ApproachCards/ApproachCards'
 import React from 'react'
+import { Ticker } from '../../../../shared/Ticker/Ticker'
 
 export const Features = () => {
   return (
@@ -67,13 +68,73 @@ export const Features = () => {
             />
           ))}
         </div>
+        <div className={clsx('section', styles.approach)}>
+          <svg
+            className={styles.approachBg}
+            preserveAspectRatio='none'
+            width='1686'
+            height='687'
+            viewBox='0 0 1686 687'
+            fill='none'
+            xmlns='http://www.w3.org/2000/svg'
+          >
+            <g clip-path='url(#clip0_2010_10854)'>
+              <rect width='1686' height='687' fill='#151515' />
+              <line x1='843.5' y1='43' x2='843.5' y2='687' stroke='#272629' />
+              <rect
+                x='1737.4'
+                y='555'
+                width='225.133'
+                height='422.001'
+                transform='rotate(45 1737.4 555)'
+                fill='#0D0C0F'
+              />
+            </g>
+            <defs>
+              <clipPath id='clip0_2010_10854'>
+                <rect width='1686' height='687' fill='white' />
+              </clipPath>
+            </defs>
+          </svg>
+          <div className='container'>
+            <div className='section-head'>
+              <div className='line'></div>
+              <span>[ 03 ]</span>
+              <div className='section-head-icon'>
+                <img src='/images/icons/blog-head-icon.svg' alt='' />
+              </div>
+            </div>
+            <div className='section-text-group'>
+              <div className='section-title-block'>
+                <span className='section-label'>// information security </span>
+                <h3>
+                  Our
+                  <br />
+                  Approach
+                </h3>
+              </div>
+              <div className='section-text-block'>
+                <p>
+                  <div className='triangle'></div>
+                  leveraging best-in-class AI technology to protect and monitor
+                  blockchain protocols and smart ntracts.leveraging
+                  best-in-class AI technology to protect and monitor blockchain
+                  protocols and smart contracts.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.tickerContainer}>
+          <Ticker />
+        </div>
         <ApproachCards />
-        <div className='flex flex-col mt-[10vh]'>
+        <div className={styles.content}>
           <h3 className='text-center'>
             What Cybirb smart contract Audit Report includes?
           </h3>
-          <div className='section-text-group gap-[3.855vw]'>
-            <div className='section-text-block flex-1'>
+          <div className='section-text-group'>
+            <div className='section-text-block'>
               <p>
                 \\ Outlining the findings, vulnerabilities, and recommendations
                 for improving the security of the smart contract. This includes
@@ -81,15 +142,15 @@ export const Features = () => {
                 controls, and mitigations for identified risks.
               </p>
             </div>
-            <div className='section-text-block flex-1'>
+            <div className='section-text-block'>
               <p>
                 \\ Classification of vulnerabilities depending on their severity
               </p>
             </div>
-            <div className='section-text-block flex-1'>
+            <div className='section-text-block'>
               <p>\\ Step-by-step recommendations on how to fix all issues.</p>
             </div>
-            <div className='section-text-block flex-1'>
+            <div className='section-text-block'>
               <p>
                 \\ Smart contract scoring according to 4 parameters:
                 documentation quality, code quality, architecture quality, and

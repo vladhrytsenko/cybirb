@@ -1,8 +1,12 @@
 .testimonials {
   @apply h-fit;
 
+  div[class='section-text-group'] {
+    @apply max-md:flex-col;
+  }
+
   &TextBlock {
-    @apply max-w-[28.470vw] w-full;
+    @apply max-w-[28.470vw] max-md:max-w-full w-full max-md:mt-[40px];
   }
 
   &Cards {
@@ -26,16 +30,30 @@
     }
 
     div[class*='swiper-wrapper'] {
-      @apply h-[50vh];
+      @apply h-[50vh] max-md:h-min mr-[3.559vw];
       overflow: unset !important;
     }
 
     div[class*='swiper-slide'] {
-      width: 30vw !important;
-
       &:nth-child(1) {
         @apply ml-[3.559vw];
       }
+    }
+  }
+
+  .codeContainer {
+    @apply flex flex-col w-full items-center justify-center gap-[clamp(16px,2.017vw,34px)] h-[clamp(300px,53.381vw,900px)];
+    background-image: url('/images/Home/Testimonials/code.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .title {
+      @apply text-[clamp(28px,4.033vw,68px)] uppercase;
+    }
+
+    button {
+      @apply h-[40px] w-[200px];
     }
   }
 }

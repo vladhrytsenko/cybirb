@@ -1,7 +1,10 @@
 .serviceCard {
-  @apply transition-colors duration-500 min-w-[23.428vw] w-[23.428vw] min-h-[43.3vh] h-[43.3vh] p-[0.059vw];
-
+  @apply transition-colors duration-500 min-w-[350px] w-[23.428vw] min-h-[350px] max-sm:w-[100%] h-[43.3vh] p-[0.059vw];
   background-color: $stroke;
+
+  @media (max-width: 640px)  {
+    border: 1px solid #595A5A;
+  }
 
   &:hover {
     background-color: $blue;
@@ -20,7 +23,7 @@
   }
 
   &Content {
-    @apply w-full h-full p-[1.779vw] flex flex-col justify-between items-start relative transition-colors duration-500;
+    @apply w-full h-full p-[clamp(16px,1.779vw,32px)] flex flex-col justify-between items-start relative transition-colors duration-500;
 
     background-color: $dark;
   }
@@ -30,22 +33,22 @@
   }
 
   &Title {
-    @apply text-[1.423vw] font-medium;
+    @apply text-[clamp(20px,1.423vw,24px)] font-medium;
     line-height: 145%;
   }
 
   &Category {
-    @apply text-[0.830vw] font-medium mt-[2.16vh] mb-[1.3vh];
+    @apply text-[clamp(12px,0.830vw,14px)] font-medium mt-[2.16vh] mb-[1.3vh] uppercase;
     line-height: 145%;
   }
 
   &Text {
-    @apply text-[0.949vw];
+    @apply text-[clamp(16px,0.949vw,14px)];
     line-height: 131%;
   }
 
   &Icon {
-    @apply w-[8vw] h-[8vw] absolute bottom-[1.483vw] right-[1.483vw] opacity-50 transition-opacity duration-500;
+    @apply w-[clamp(110px,8vw,130px)] h-[clamp(110px,8vw,130px)] absolute bottom-[clamp(16px,1.483vw,32px)] right-[clamp(16px,1.483vw,32px)] opacity-50 transition-opacity duration-500;
 
     img {
       @apply w-full h-full object-contain object-center;
@@ -53,7 +56,7 @@
   }
 
   &Link {
-    @apply text-[0.712vw] font-medium uppercase flex items-center gap-[0.474vw];
+    @apply text-[12px] font-medium uppercase flex items-center gap-[0.474vw];
     line-height: 116.6%;
   }
 }

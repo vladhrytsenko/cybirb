@@ -1,6 +1,26 @@
 .faq {
   @apply h-fit;
 
+  .titleWrapper {
+    @apply flex items-center w-full mb-[clamp(40px,5.338vw,90px)];
+
+    .horizontalLine {
+      @apply flex-1 h-[1px] w-full bg-[#272629];
+    }
+
+    .titleContainer {
+      @apply flex items-center content-center relative w-fit h-[clamp(38px,2.728vw,46px)];
+
+      svg {
+        @apply h-full w-full;
+      }
+
+      .title {
+        @apply absolute left-0 top-0 w-full h-full text-center leading-[clamp(38px,2.728vw,46px)] text-[clamp(14px,1.186vw,20px)] uppercase;
+      }
+    }
+  }
+
   &List {
     @apply w-full flex flex-col gap-[1vh];
   }

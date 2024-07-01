@@ -26,7 +26,7 @@
     @apply flex items-center cursor-pointer;
 
     svg {
-      @apply w-[0.816vw] h-[0.504vw] transition-transform duration-[400ms];
+      @apply w-[clamp(8px,0.949vw,16px)] h-[clamp(8px,0.949vw,16px)] transition-transform duration-[400ms];
     }
   }
 
@@ -37,7 +37,7 @@
     transition-property: height, opacity;
 
     &Content {
-      @apply max-w-[35.884vw] w-full;
+      @apply max-w-[35.884vw] max-md:max-w-[100%] w-full;
     }
   }
 }

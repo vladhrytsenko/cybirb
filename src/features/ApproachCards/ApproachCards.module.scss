@@ -1,5 +1,13 @@
-.approachCards {
-  @apply mt-[13vh] w-full h-[70vh] flex;
+.approachDesktopCards {
+  @apply max-md:hidden mt-[13vh] w-full h-[70vh] flex;
 
   border-block: 0.059vw solid $stroke;
+}
+
+.approachMobileCards {
+  @apply md:hidden mt-[clamp(44px,5.338vw,90px)] w-full h-[380px] flex;
+
+  .slider {
+    @apply px-[3.559vw];
+  }
 }

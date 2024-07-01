@@ -23,17 +23,17 @@
   }
 
   &Label {
-    @apply flex items-center gap-[1.898vw] text-[2.372vw] uppercase;
+    @apply flex items-center gap-[1.898vw] text-[clamp(20px,2.372vw,64px)] uppercase;
     line-height: 217%;
   }
 
   &CenterText {
-    @apply text-[0.830vw] absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] uppercase;
+    @apply text-[clamp(12px,0.830vw,64px)] absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] uppercase;
     line-height: 145%;
   }
 
   &Circles {
-    @apply w-[13.049vw] h-[13.049vw] absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-[-1] opacity-0 scale-[0.8];
+    @apply w-[clamp(100px,13.049vw,500px)] h-[clamp(100px,13.049vw,500px)] absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-[-1] opacity-0 scale-[0.8];
 
     &.two {
       @apply w-[8.778vw] h-[8.778vw];
@@ -73,7 +73,7 @@
   }
 
   &Logo {
-    @apply w-[3.855vw] h-[3.855vw] absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-[2] opacity-0 pointer-events-none scale-[0.6];
+    @apply w-[clamp(40px,3.855vw,120px)] h-[clamp(40px,3.855vw,120px)] absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-[2] opacity-0 pointer-events-none scale-[0.6];
     transition: 0.65s ease 0.35s;
     transition-property: opacity, scale;
 

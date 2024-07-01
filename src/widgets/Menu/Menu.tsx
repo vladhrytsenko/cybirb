@@ -46,6 +46,7 @@ export const Menu = () => {
           <span>[ 04 ]</span>
         </div>
         <div className={styles.menuLinks}>
+          <div className={styles.additionalBlock} />
           <ul className={styles.menuNav}>
             {menuItems.map((item: iMenuItem) => (
               <MenuDropdown
@@ -56,42 +57,44 @@ export const Menu = () => {
               />
             ))}
           </ul>
-          <div className={styles.menuAccountOptions}>
-            <a href="" className={styles.menuAccoutOption}>
-              sign up
-            </a>
-            <a href="" className={styles.menuAccoutOption}>
-              log in
-            </a>
-          </div>
-          <div className={styles.menuContact}>
-            <ul className={styles.menuContactCol}>
-              <span className={styles.menuContactColTitle}>contact us</span>
-              <a
-                className={styles.menuContactColLink}
-                href="mailto:Info@cybirb.gmail.com"
-              >
-                Info@cybirb.gmail.com
+          <div>
+            <div className={styles.menuAccountOptions}>
+              <a href='' className={styles.menuAccoutOption}>
+                sign up
               </a>
-              <a
-                className={styles.menuContactColLink}
-                href="mailto:@cybirbofficial.gmail.com"
-              >
-                @cybirbofficial.gmail.com
+              <a href='' className={styles.menuAccoutOption}>
+                log in
               </a>
-            </ul>
-            <ul className={styles.menuContactCol}>
-              <span className={styles.menuContactColTitle}>stay connect</span>
-              <a className={styles.menuContactColLink} href="">
-                telegram
-              </a>
-              <a className={styles.menuContactColLink} href="">
-                facebook
-              </a>
-              <a className={styles.menuContactColLink} href="">
-                twitter
-              </a>
-            </ul>
+            </div>
+            <div className={styles.menuContact}>
+              <ul className={styles.menuContactCol}>
+                <span className={styles.menuContactColTitle}>contact us</span>
+                <a
+                  className={styles.menuContactColLink}
+                  href='mailto:Info@cybirb.gmail.com'
+                >
+                  Info@cybirb.gmail.com
+                </a>
+                <a
+                  className={styles.menuContactColLink}
+                  href='mailto:@cybirbofficial.gmail.com'
+                >
+                  @cybirbofficial.gmail.com
+                </a>
+              </ul>
+              <ul className={styles.menuContactCol}>
+                <span className={styles.menuContactColTitle}>stay connect</span>
+                <a className={styles.menuContactColLink} href=''>
+                  telegram
+                </a>
+                <a className={styles.menuContactColLink} href=''>
+                  facebook
+                </a>
+                <a className={styles.menuContactColLink} href=''>
+                  twitter
+                </a>
+              </ul>
+            </div>
           </div>
         </div>
         <div className={styles.menuSideNumbers}>
