@@ -1,0 +1,88 @@
+.whyCybirb {
+  @apply h-full;
+
+  .titleWrapper {
+    @apply flex items-center w-full;
+
+    .horizontalLine {
+      @apply flex-1 h-[1px] w-full bg-[#272629];
+    }
+
+    .titleContainer {
+      @apply flex items-center content-center relative w-fit h-[clamp(38px,2.728vw,46px)];
+
+      svg {
+        @apply h-full w-full;
+      }
+
+      .title {
+        @apply absolute left-0 top-0 w-full h-full text-center leading-[clamp(38px,2.728vw,46px)] text-[clamp(14px,1.186vw,20px)] uppercase;
+      }
+    }
+  }
+
+  .cards {
+    @apply grid grid-cols-2 gap-[clamp(16px,1.186vw,20px)] mt-[clamp(36px,2.966vw,50px)];
+  }
+
+  .sectionTitle {
+    @apply capitalize text-center mt-[clamp(28px,2.847vw,48px)];
+  }
+
+  .sections {
+    @apply grid grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1 gap-[clamp(16px,1.186vw,20px)] mt-[clamp(36px,2.966vw,50px)];
+
+    .section {
+      @apply flex justify-center items-center w-full;
+    }
+  }
+
+  .cardsContainer {
+    @apply flex max-sm:flex-col w-full mt-[clamp(40px,5.931vw,100px)] pb-[5.4vh];
+
+    .history {
+      @apply flex items-center justify-center h-[30vw] min-h-[350px] max-sm:min-h-min min-w-[30vw] p-[20px];
+
+      background-image: url('/images/About/WhyCybirb/history_bg.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      border: 1px solid rgba(255, 255, 255, 0.07);
+
+      .title {
+        @apply text-center;
+      }
+    }
+
+    .slide {
+      @apply h-[30vw] min-h-[350px] flex flex-col justify-between p-[clamp(20px,2.372vw,40px)];
+
+      border: 1px solid rgba(255, 255, 255, 0.07);
+
+      .year {
+        @apply text-[clamp(24px,3.796vw,64px)];
+
+        &:before {
+          content: '';
+          position: absolute;
+          height: clamp(16px, 2.966vw, 50px);
+          width: clamp(56px, 10.202vw, 172px);
+          background-image: url('/images/About/WhyCybirb/number_bg.png');
+          background-repeat: no-repeat;
+          background-size: cover;
+          z-index: -1;
+        }
+      }
+    }
+
+    div[class*='swiper-scrollbar-drag'] {
+      @apply mt-[-2px] bg-white rounded-[1vw];
+
+      height: 0.45vh !important;
+    }
+
+    div[class*='swiper-horizontal'] {
+      @apply w-full h-full;
+    }
+  }
+}

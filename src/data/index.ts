@@ -1,4 +1,5 @@
 import { iMenuItem } from '../interfaces/IMenu'
+import teamMemberSource from '../../public/images/About/Team/team_member.png'
 
 export const dappsFeatures = [
   {
@@ -680,4 +681,130 @@ export const platformOffers = [
       'Implement measures to prevent abuse or malicious behaviour within the marketplace..',
     ],
   },
+]
+
+export const cybirbHistory = [
+  {
+    year: 2008,
+    text: 'School Dropout Manan Shah began fixing computers for neighbors and relatives, sparking a passion for technology.',
+  },
+  {
+    year: 2011,
+    text: 'Manan started helping various Cyber Cell departments across law enforcement agencies.',
+  },
+  {
+    year: 2014,
+    text: 'Manan started helping various Cyber Cell departments across law enforcement agencies.',
+  },
+  {
+    year: 2017,
+    text: 'Manan started helping various Cyber Cell departments across law enforcement agencies.',
+  },
+  {
+    year: 2020,
+    text: 'Manan started helping various Cyber Cell departments across law enforcement agencies.',
+  },
+]
+
+export const ourTeam = [
+  [
+    {
+      id: 1,
+      name: 'Danielle Statham',
+      avatar: teamMemberSource,
+      position: 'Co-Founder',
+      team: 'Leadership',
+      description:
+        '       Blockchain security auditor & Former Application Security Tech Lead with 10+ years of experience in Development, Pentesting, Code Audit, Security Training & Threat Modeling.',
+    },
+    {
+      id: 2,
+      name: 'Danielle Statham',
+      avatar: teamMemberSource,
+      position: 'Co-Founder',
+      team: 'Leadership',
+      description:
+        '       Blockchain security auditor & Former Application Security Tech Lead with 10+ years of experience in Development, Pentesting, Code Audit, Security Training & Threat Modeling.',
+    },
+  ],
+  [
+    {
+      id: 3,
+      name: 'Danielle Statham',
+      avatar: teamMemberSource,
+      position: 'Co-Founder',
+      team: 'Leadership',
+      description:
+        '       Blockchain security auditor & Former Application Security Tech Lead with 10+ years of experience in Development, Pentesting, Code Audit, Security Training & Threat Modeling.',
+    },
+    {
+      id: 4,
+      name: 'Danielle Statham',
+      avatar: teamMemberSource,
+      position: 'Co-Founder',
+      team: 'Leadership',
+      description:
+        '       Blockchain security auditor & Former Application Security Tech Lead with 10+ years of experience in Development, Pentesting, Code Audit, Security Training & Threat Modeling.',
+    },
+  ],
+  [
+    {
+      id: 5,
+      name: 'Danielle Statham',
+      avatar: teamMemberSource,
+      position: 'Co-Founder',
+      team: 'Leadership',
+      description:
+        '       Blockchain security auditor & Former Application Security Tech Lead with 10+ years of experience in Development, Pentesting, Code Audit, Security Training & Threat Modeling.',
+    },
+    {
+      id: 6,
+      name: 'Danielle Statham',
+      avatar: teamMemberSource,
+      position: 'Co-Founder',
+      team: 'Leadership',
+      description:
+        '       Blockchain security auditor & Former Application Security Tech Lead with 10+ years of experience in Development, Pentesting, Code Audit, Security Training & Threat Modeling.',
+    },
+  ],
+  [
+    {
+      id: 7,
+      name: 'Danielle Statham',
+      avatar: teamMemberSource,
+      position: 'Co-Founder',
+      team: 'Leadership',
+      description:
+        '       Blockchain security auditor & Former Application Security Tech Lead with 10+ years of experience in Development, Pentesting, Code Audit, Security Training & Threat Modeling.',
+    },
+    {
+      id: 8,
+      name: 'Danielle Statham',
+      avatar: teamMemberSource,
+      position: 'Co-Founder',
+      team: 'Leadership',
+      description:
+        '       Blockchain security auditor & Former Application Security Tech Lead with 10+ years of experience in Development, Pentesting, Code Audit, Security Training & Threat Modeling.',
+    },
+  ],
+  [
+    {
+      id: 9,
+      name: 'Danielle Statham',
+      avatar: teamMemberSource,
+      position: 'Co-Founder',
+      team: 'Leadership',
+      description:
+        '       Blockchain security auditor & Former Application Security Tech Lead with 10+ years of experience in Development, Pentesting, Code Audit, Security Training & Threat Modeling.',
+    },
+    {
+      id: 10,
+      name: 'Danielle Statham',
+      avatar: teamMemberSource,
+      position: 'Co-Founder',
+      team: 'Leadership',
+      description:
+        '       Blockchain security auditor & Former Application Security Tech Lead with 10+ years of experience in Development, Pentesting, Code Audit, Security Training & Threat Modeling.',
+    },
+  ],
 ]

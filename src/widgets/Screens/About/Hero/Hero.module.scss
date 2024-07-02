@@ -1,0 +1,33 @@
+.hero {
+  @apply h-fit;
+
+  &Bg {
+    @apply absolute left-0 top-0 pointer-events-none w-full h-full z-[-1];
+    background-size: cover;
+    background-image: url('/images/CybGuard/DAppsFeatures/sub_guard_bg.png');
+  }
+
+  div[class='section-head'] {
+    @apply max-xl:mt-[30px] max-md:mt-[40px];
+  }
+
+  div[class='section-text-group'] {
+    @apply flex max-md:flex-col;
+  }
+
+  div[class='section-text-block'] {
+    @apply max-w-[437px] w-full mt-[clamp(40px,3.084vw,52px)];
+
+    a {
+      @apply max-[465px]:w-full;
+    }
+  }
+
+  div[class='section-title-block'] {
+    @apply max-w-[clamp(300px,30vw,600px)] w-full;
+  }
+
+  div[class='section-head'] span {
+    @apply text-[clamp(14px,0.949vw,16px)];
+  }
+}

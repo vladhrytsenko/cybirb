@@ -1,0 +1,161 @@
+.features {
+  @apply h-fit;
+
+  div[class='section-text-group'] {
+    @apply max-sm:flex-col;
+  }
+
+  .filters {
+    @apply flex max-sm:mt-[32px] max-sm:m-auto;
+
+    .actionTab {
+      @apply h-[34px] px-[30px] max-[420px]:px-[20px] flex items-center justify-center text-[14px] font-medium uppercase relative text-center transition-colors duration-500 cursor-pointer;
+      line-height: 145%;
+
+      color: #4f5050;
+
+      &:first-child {
+        @apply px-[2.5vw];
+      }
+
+      &.active {
+        color: $dark;
+
+        .actionTabBg {
+          svg {
+            path {
+              fill: #fff;
+              stroke: #fff;
+            }
+          }
+        }
+      }
+
+      &Bg {
+        @apply pointer-events-none z-[-1] absolute top-0 left-0 w-full h-full;
+
+        svg {
+          @apply w-full h-full;
+
+          path {
+            @apply transition-colors duration-500;
+          }
+        }
+      }
+    }
+  }
+
+  .teamContainer {
+    @apply mt-[clamp(32px,4.567vw,77px)] mx-[-3.559vw];
+
+    div[class*='swiper-scrollbar-drag'] {
+      @apply mt-[clamp(28px,2.966vw,50px)] bg-white rounded-[1vw];
+
+      height: 0.45vh !important;
+    }
+
+    div[class*='swiper-scrollbar'] {
+      @apply mt-[clamp(28px,2.966vw,50px)];
+
+      height: 0.45vh !important;
+    }
+
+    div[class*='swiper-scrollbar-horizontal'] {
+      @apply mx-[3.559vw];
+
+      height: 0.45vh !important;
+    }
+
+    div[class*='swiper-horizontal'] {
+      @apply w-full h-full;
+    }
+
+    div[class*='swiper-slide'] {
+      @apply w-min mx-[clamp(4px,0.55vw,10px)];
+
+      &:first-child {
+        @apply ml-[3.559vw];
+      }
+
+      &:last-child {
+        @apply mr-[3.559vw];
+      }
+    }
+  }
+
+  .joinOurTeamContainer {
+    @apply flex max-lg:flex-col h-[34.164vw] max-lg:h-min min-h-[206px] mt-[clamp(34px,5.101vw,86px)];
+
+    .image {
+      @apply h-full w-[45vw] max-lg:w-full;
+    }
+
+    .details {
+      @apply flex flex-col justify-between h-full w-full border-[1px] border-[rgba(255,255,255,0.07)] max-sm:border-[transparent];
+
+      div[class='section-text-group'] {
+        @apply pl-[3.559vw] pr-[1.779vw] pb-[24px] items-end max-md:items-start;
+
+        div[class='section-title-block'] h3 {
+          @apply max-w-[20.166vw] max-sm:max-w-full;
+        }
+
+        button {
+          @apply max-md:mt-[24px] max-sm:w-full max-sm:h-[40px];
+        }
+      }
+
+      .globalPresence {
+        @apply pl-[3.559vw] pr-[1.779vw] pt-[clamp(28px,1.898vw,32px)] pb-[14px] border-t-[1px] border-t-[rgba(255,255,255,0.07)] max-sm:border-t-[transparent] max-sm:pt-[8px];
+
+        .globalPresenceItems {
+          @apply grid grid-cols-3 mt-[clamp(18px,1.483vw,25px)] max-sm:grid-cols-1;
+
+          .globalPresenceItem {
+            @apply flex flex-col max-sm:flex-row max-sm:items-center max-sm:gap-[12px];
+          }
+
+          .value {
+            @apply text-[32px];
+          }
+
+          .description {
+            @apply text-[clamp(12px,0.949vw,16px)] text-[#7B7B7B];
+          }
+        }
+      }
+    }
+  }
+
+  .titleWrapper {
+    @apply flex items-center w-full mt-[clamp(40px,7.711vw,130px)];
+
+    .horizontalLine {
+      @apply flex-1 h-[1px] w-full bg-[#272629];
+    }
+
+    .titleContainer {
+      @apply flex items-center content-center relative w-fit h-[clamp(38px,2.728vw,46px)];
+
+      svg {
+        @apply h-full w-full;
+      }
+
+      .title {
+        @apply absolute left-0 top-0 w-full h-full text-center leading-[clamp(38px,2.728vw,46px)] text-[clamp(14px,1.186vw,20px)] uppercase;
+      }
+    }
+  }
+
+  .partnersContainer {
+    @apply flex flex-wrap justify-center items-center border-t-[1px] border-b-[1px] border-[rgba(255,255,255,0.07)] mt-[3.321vw] max-sm:border-t-[0px] max-sm:mt-[-19px] mb-[clamp(40px,5.931vw,100px)];
+
+    .partnerContainer {
+      @apply flex items-center justify-center h-[clamp(174px,13.286vw,224px)] w-[clamp(174px,19.988vw,337px)] border-[1px] border-[rgba(255,255,255,0.07)];
+
+      .image {
+        @apply h-[clamp(70px,5.635vw,95px)] w-[clamp(120px,10.676vw,180px)];
+      }
+    }
+  }
+}
