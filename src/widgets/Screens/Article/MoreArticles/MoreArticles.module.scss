@@ -17,7 +17,7 @@
     @apply md:hidden pl-[3.559vw];
 
     a {
-      @apply w-[100%];
+      @apply w-[100%] max-md:h-[40px];
     }
   }
 

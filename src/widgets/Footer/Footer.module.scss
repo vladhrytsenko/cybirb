@@ -9,7 +9,7 @@
     @apply pt-[6vh] flex items-center justify-between gap-[3.262vw] max-md:hidden;
 
     span {
-      @apply text-[0.830vw] capitalize;
+      @apply text-[clamp(14px,0.830vw,16px)] capitalize;
       line-height: 150%;
     }
 
@@ -24,6 +24,13 @@
 
   &Content {
     @apply w-full h-full pt-[8.6vh] pb-[3.25vh] px-[2.372vw] relative flex flex-col items-stretch max-md:p-0;
+    background-image: url('/images/footer_bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    @media (max-width: 768px)  {
+      background-image: url('/images/footer_mobile_bg.png');
+    }
 
     &Bg {
       @apply absolute w-full h-full top-0 left-0 pointer-events-none z-[-1];
@@ -35,14 +42,14 @@
   }
 
   &Body {
-    @apply flex gap-[1.423vw] max-md:flex-col max-md:w-full;
+    @apply flex max-md:flex-col max-md:w-full;
   }
 
   &Column {
     @apply pl-[1.186vw] pr-[1.423vw] max-md:w-full max-md:p-[12px];
 
-    @media (max-width: 640px)  {
-      border-bottom: 0.7px solid #595A5A;
+    &:not(:last-child) {
+      @apply max-md:border-[1px] max-md:border-[#595A5A];
     }
   }
 
@@ -75,14 +82,14 @@
   }
 
   &Logo {
-    @apply max-md:hidden w-[5vw] h-[10.8vh];
+    @apply max-md:hidden min-w-[4vw] h-[10.8vh] mr-[16px];
   }
 
   &LogoWrapper {
     @apply md:hidden flex items-center justify-center w-full p-[24px];
 
-    @media (max-width: 640px)  {
-      border-bottom: 0.7px solid #595A5A;
+    @media (max-width: 768px)  {
+      border-bottom: 1px solid #595A5A;
     }
 
     .logo {

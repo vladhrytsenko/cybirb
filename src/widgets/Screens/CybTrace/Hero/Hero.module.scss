@@ -25,10 +25,10 @@
     }
 
     div[class='section-text-block'] {
-      @apply mt-[7.6vh] max-w-[28.766vw] max-md:max-w-[100%] w-full ml-auto;
+      @apply mt-[7.6vh] max-w-[28.766vw] max-md:max-w-full w-full ml-auto;
 
       button {
-        @apply max-[465px]:w-full;
+        @apply max-[465px]:w-full max-[465px]:h-[40px];
       }
     }
 

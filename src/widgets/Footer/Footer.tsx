@@ -3,28 +3,11 @@ import styles from './Footer.module.scss'
 import { Logo } from '../../shared/Logo/Logo'
 import { Button } from '../../shared/Button/Button'
 import { Input } from '../../shared/Input/Input'
-import { useEffect } from 'react'
 
 const Footer = () => {
   return (
     <footer className={clsx(styles.footer, 'section')}>
       <div className={styles.footerContent}>
-        <div className={styles.footerContentBg}>
-          <svg
-            preserveAspectRatio='none'
-            width='1596'
-            height='430'
-            viewBox='0 0 1596 430'
-            fill='none'
-            xmlns='http://www.w3.org/2000/svg'
-          >
-            <path
-              d='M1564.75 1.42625L1594.37 28.7251C1595.09 29.3878 1595.5 30.3211 1595.5 31.2989V398.701C1595.5 399.679 1595.09 400.612 1594.37 401.275L1564.75 428.574C1564.1 429.169 1563.26 429.5 1562.38 429.5H33.6223C32.7434 429.5 31.8968 429.169 31.2505 428.574L1.62812 401.275C0.909062 400.612 0.5 399.679 0.5 398.701V31.2989C0.5 30.321 0.90906 29.3878 1.62812 28.7251L31.2505 1.42625C31.8967 0.830651 32.7435 0.5 33.6223 0.5H1562.38C1563.26 0.5 1564.1 0.830648 1564.75 1.42625Z'
-              fill='#0D0C0F'
-              stroke='#595A5A'
-            />
-          </svg>
-        </div>
         <div className={styles.footerMain}>
           <div className={styles.footerLogo}>
             <Logo logoType='secondary' />

@@ -4,13 +4,9 @@ import { testimonials } from '../../../../data'
 import { SwiperSlide, Swiper } from 'swiper/react'
 import { TestimonialCard } from '../../../../entities/TestimonialCard/TestimonialCard'
 import { FreeMode, Scrollbar } from 'swiper'
-import { useState } from 'react'
-import { ISwiper } from '../../../../interfaces/ISwiper'
 import { Button } from '../../../../shared/Button/Button'
 
 export const Testimonials = () => {
-  const [swiper, setSwiper] = useState<ISwiper>()
-
   return (
     <section className={clsx(styles.testimonials, 'section')}>
       <div className='container space-top'>
@@ -43,9 +39,7 @@ export const Testimonials = () => {
       </div>
       <div className={styles.testimonialsCards}>
         <Swiper
-          className={styles.servicesCards}
-          slidesPerView={'auto'}
-          freeMode={true}
+          freeMode
           spaceBetween={20}
           breakpoints={{
             0: {
@@ -65,7 +59,6 @@ export const Testimonials = () => {
           scrollbar={{
             hide: false,
           }}
-          onSwiper={(swiper) => setSwiper(swiper)}
         >
           {testimonials.map((testimonial) => (
             <SwiperSlide>

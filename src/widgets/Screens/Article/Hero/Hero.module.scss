@@ -16,8 +16,12 @@
   &ArticleInfo {
     @apply w-[55%] max-md:w-[100%] relative py-[5.4vh] px-[1.8vw] flex flex-col items-start;
 
-    div[class='card-number']::before {
-      @apply w-[75%];
+    div[class='card-number'] {
+      @apply text-[clamp(18px,1.423vw,24px)];
+
+      &::before {
+        @apply max-w-[clamp(160px,9vw,200px)] w-full h-[13px];
+      }
     }
 
     &TextBlock {

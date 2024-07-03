@@ -10,7 +10,7 @@
     @apply relative w-[16vw] max-md:w-[60vw] h-[4vh];
 
     &Bg {
-      @apply absolute left-0 top-0 z-[-1] w-full h-full pointer-events-none;
+      @apply absolute left-0 top-0 z-[0] w-full h-full pointer-events-none;
 
       path {
         @apply transition-colors duration-[350ms];

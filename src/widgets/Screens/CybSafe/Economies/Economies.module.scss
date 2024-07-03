@@ -2,11 +2,11 @@
   @apply h-fit;
 
   div[class='section-text-group'] {
-    @apply h-full flex-col justify-between;
+    @apply h-full max-md:flex-col justify-between;
   }
 
   div[class='section-text-block'] {
-    @apply max-md:mt-[32px];
+    @apply max-md:mt-[32px] md:max-w-[338px];
   }
 
   .cards {

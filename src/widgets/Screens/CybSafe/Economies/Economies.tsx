@@ -23,8 +23,7 @@ export const Economies = () => {
           <div className='section-text-block'>
             <p>
               <div className='triangle'></div>
-              Various aspects are assessed during <br /> a Tokenomics audit,
-              including.
+              Various aspects are assessed during a Tokenomics audit, including.
             </p>
           </div>
         </div>

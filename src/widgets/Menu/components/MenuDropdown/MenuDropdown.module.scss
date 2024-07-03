@@ -31,8 +31,7 @@
 }
 
 .menuItem {
-  @apply uppercase flex items-center relative cursor-default;
-  line-height: 100%;
+  @apply uppercase flex items-center relative cursor-default leading-[2.966vw];
 
   &Title {
     @apply text-[clamp(20px,2.847vw,48px)] transition-colors duration-500 w-full;

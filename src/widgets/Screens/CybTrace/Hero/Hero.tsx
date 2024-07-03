@@ -52,7 +52,7 @@ export const Hero = () => {
               </h3>
             </div>
           </div>
-          <div className={clsx('section-text-block')}>
+          <div className='section-text-block'>
             <p>
               <div className='triangle'></div>
               Our cutting-edge protection safeguards you from hacks and scams

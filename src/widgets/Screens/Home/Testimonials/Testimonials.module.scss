@@ -26,18 +26,12 @@
     }
 
     div[class*='swiper-horizontal'] {
-      @apply w-full h-full;
+      @apply w-full h-full px-[3.559vw];
     }
 
     div[class*='swiper-wrapper'] {
-      @apply h-[50vh] max-md:h-min mr-[3.559vw];
+      @apply h-[50vh] max-md:h-min;
       overflow: unset !important;
-    }
-
-    div[class*='swiper-slide'] {
-      &:nth-child(1) {
-        @apply ml-[3.559vw];
-      }
     }
   }
 
