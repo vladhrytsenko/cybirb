@@ -30,6 +30,7 @@ export const Economies = () => {
         <div className={styles.cards}>
           {cybSafeFeatures.map((feature) => (
             <FeatureCard
+              prefix=''
               title={feature.title}
               text={feature.text}
               icon={feature.icon}

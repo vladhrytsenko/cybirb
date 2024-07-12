@@ -45,10 +45,14 @@ export const Hero = () => {
           <div className='section-text-group'>
             <div className='section-title-block'>
               <span className='section-label'>// cybtrace</span>
-              <h3>
+              <h3 className={styles.desktopTitle}>
                 Web3 Security at your <br />
                 fingertips for your <br /> wallets that stores <br /> your
                 assets.
+              </h3>
+              <h3 className={styles.mobileTitle}>
+                Web3 Security at your <br />
+                fingertips for your <br /> wallets that stores.
               </h3>
             </div>
           </div>

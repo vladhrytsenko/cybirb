@@ -69,10 +69,8 @@ body {
 }
 
 .triangle {
-  @apply w-0 h-0 rotate-[-45deg] inline-block translate-y-[-100%] mr-[40px] mb-[4px];
-  border-left: clamp(5px, 0.474vw, 7px) solid transparent;
-  border-right: clamp(5px, 0.474vw, 7px) solid transparent;
-  border-bottom: clamp(5px, 0.474vw, 7px) solid #d9d9d9;
+  @apply w-[clamp(6px,0.474vw,8px)] h-[clamp(6px,0.474vw,8px)] inline-block bg-[#d9d9d9] mr-[32px] mb-[6px];
+  clip-path: polygon(0 0, 0 100%, 100% 0);
 }
 
 .rounded-stroke {
@@ -132,17 +130,12 @@ body {
   }
 
   .line {
-    @apply absolute top-0 left-0 w-full h-[clamp(6px,0.593vw,10px)] rounded-[0.297vw] z-[0];
+    @apply absolute top-0 left-0 w-full h-[clamp(6px,0.593vw,10px)] z-[0] bg-transparent;
 
     border: 0.1vw solid #fff;
     border-bottom: none;
-
-    &::before {
-      content: '';
-
-      @apply h-full w-[110%] block absolute bottom-0 translate-y-[50%] left-1/2 translate-x-[-50%] right-0 z-[1];
-      background-color: $dark;
-    }
+    border-top-left-radius: 0.297vw;
+    border-top-right-radius: 0.297vw;
   }
 }
 

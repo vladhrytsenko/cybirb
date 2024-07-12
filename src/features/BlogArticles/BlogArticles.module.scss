@@ -79,7 +79,7 @@
     @apply w-[100%];
 
     button {
-      @apply max-sm:w-[100%] mx-auto;
+      @apply max-sm:w-[100%] mx-auto max-sm:h-[50px];
     }
   }
 

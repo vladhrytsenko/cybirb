@@ -3,6 +3,10 @@
 
   &TextBlock {
     @apply max-w-[437px] w-full;
+
+    p div {
+      @apply text-white;
+    }
   }
 
   div[class='section-text-group'] {
@@ -39,6 +43,6 @@
   }
 
   &Cards {
-    @apply grid grid-cols-2 gap-[clamp(16px,1.186vw,20px)] mt-[clamp(40px,4.152vw,70px)];
+    @apply grid grid-cols-2 gap-[clamp(12px,1.186vw,20px)] mt-[clamp(40px,4.152vw,70px)];
   }
 }

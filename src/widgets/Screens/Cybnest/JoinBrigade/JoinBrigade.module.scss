@@ -10,7 +10,7 @@
   }
 
   &Cards {
-    @apply flex gap-[1.186vw] mt-[12vh];
+    @apply flex gap-[clamp(12px,1.186vw,20px)] mt-[12vh];
 
     > div {
       &:nth-child(3) {

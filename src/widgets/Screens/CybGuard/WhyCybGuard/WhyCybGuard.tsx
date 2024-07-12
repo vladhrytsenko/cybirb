@@ -23,6 +23,7 @@ export const WhyCybGuard = () => {
         <div className={styles.cardsContainer}>
           {dappsFeatures.map((feature) => (
             <FeatureCard
+              prefix=''
               text={feature.text}
               title={feature.title}
               icon={feature.icon}

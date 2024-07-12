@@ -13,7 +13,7 @@ export const MoreArticles = () => {
         <div className='section-text-group'>
           <div className='section-title-block'>
             <span className='section-label'>// may interest you</span>
-            <h3>More articles</h3>
+            <h2>More articles</h2>
           </div>
           <div className={clsx('section-text-block', styles.seeAllDesktop)}>
             <Button type='link' href='/blog'>
@@ -45,7 +45,7 @@ export const MoreArticles = () => {
             {blogArticles.map((article, idx) => (
               <SwiperSlide className={styles.moreArticlesSlide}>
                 <BlogCard
-                  link={article.link}
+                  description={article.description}
                   clip={true}
                   id={idx + 1}
                   title={article.title}

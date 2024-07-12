@@ -83,7 +83,7 @@ export const Team = () => {
               <Button>JOIN</Button>
             </div>
             <div className={styles.globalPresence}>
-              <h5>Global Presence</h5>
+              <h5 className={styles.title}>Global Presence</h5>
               <div className={styles.globalPresenceItems}>
                 <div className={styles.globalPresenceItem}>
                   <span className={styles.value}>50+</span>
@@ -118,7 +118,7 @@ export const Team = () => {
                 stroke='#272629'
               />
             </svg>
-            <span className={styles.title}>Cybirb In Media</span>
+            <span className={styles.title}>Trusted by</span>
           </div>
           <div className={styles.horizontalLine} />
         </div>

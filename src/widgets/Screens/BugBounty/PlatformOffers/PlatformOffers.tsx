@@ -45,7 +45,7 @@ export const PlatformOffers = () => {
       <Banner
         buttonTitle='Join now'
         href='/'
-        title={'Ready to Join the Bug Bounty?'}
+        title='Ready to Join the Bug Bounty?'
       />
     </>
   )

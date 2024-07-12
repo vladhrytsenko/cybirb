@@ -42,7 +42,7 @@
       }
 
       .image {
-        @apply p-[2.372vw] min-h-[297px] relative rounded-[1.068vw] overflow-hidden;
+        @apply p-[2.372vw] min-h-[297px] max-md:mx-[-3.559vw] relative rounded-[1.068vw] overflow-hidden;
 
         img {
           @apply w-full h-full object-cover object-center absolute top-0 left-0;

@@ -9,6 +9,16 @@
     @apply text-[clamp(14px,0.949vw,16px)];
   }
 
+  div[class='section-title-block'] {
+    .desktopTitle {
+      @apply max-sm:hidden;
+    }
+
+    .mobileTitle {
+      @apply sm:hidden;
+    }
+  }
+
   &Bg {
     @apply absolute top-0 left-0 w-full h-full z-[-1];
 

@@ -8,6 +8,7 @@ interface IProps {
   title: string
   text: string[]
   link?: boolean
+  prefix?: string
   linkTitle?: string
   linkHref?: string
 }
@@ -17,6 +18,7 @@ export const FeatureCard: FC<IProps> = ({
   title,
   text,
   link = false,
+  prefix = '// ',
   linkTitle,
   linkHref,
 }) => {
@@ -24,12 +26,15 @@ export const FeatureCard: FC<IProps> = ({
     <div className={clsx(styles.featureCard)}>
       <div className={styles.featureCardContent}>
         <div className={styles.featureCardIcon}>
-          <img src={icon} alt="" />
+          <img src={icon} alt='' />
         </div>
         <span className={styles.featureCardTitle}>{title}</span>
         <div className={styles.featureCardText}>
           {text.map((text) => (
-            <p>// {text}</p>
+            <p>
+              {prefix}
+              {text}
+            </p>
           ))}
         </div>
         {link && (

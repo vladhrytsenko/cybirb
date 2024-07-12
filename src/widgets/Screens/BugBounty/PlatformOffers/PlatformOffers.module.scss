@@ -23,5 +23,13 @@
 
   .cardsContainer {
     @apply grid grid-cols-3 max-sm:grid-cols-1 max-md:grid-cols-2 pt-[clamp(40px,5.931vw,80px)];
+
+    div {
+      @apply items-start
+    }
+
+    span, p {
+      @apply text-left;
+    }
   }
 }

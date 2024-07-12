@@ -56,9 +56,9 @@ export const partners = [
 
 export const cybTraceFeatures = [
   {
-    title: 'Real-time assistance',
+    title: 'Secure Architecture Design',
     text: [
-      'Protection from on-chain assets exploits and threats before you lose any funds.',
+      'CybGuard crafts robust and secure DApp architectures, protecting your project from the ground up.',
     ],
     link: {
       title: 'Get Notified',
@@ -69,7 +69,7 @@ export const cybTraceFeatures = [
   {
     title: 'Real time transaction protection',
     text: [
-      'If you have a question before validating a transaction, we will be here to help you out.',
+      'CyBirb’s CybTrace protects your wallet against scams and vulnerabilities.',
     ],
     link: {
       title: 'Add CyBirb RTP',
@@ -358,72 +358,96 @@ export const blogArticles = [
     category: 'economic rick',
     title: 'Security of information systems',
     thumbnail: '/images/Home/Blog/1.png',
+    description:
+      'Leveraging best-in-class AI technology to protect and monitor blockchain protocols and smart ntracts.',
   },
   {
     link: '/blog/new-article',
     category: 'general',
     title: 'Protection of personal data',
     thumbnail: '/images/Home/Blog/2.png',
+    description:
+      'Leveraging best-in-class AI technology to protect and monitor blockchain protocols and smart ntracts.',
   },
   {
     link: '/blog/new-article',
     category: 'partnerships',
     title: 'Identification of potential and real threats',
     thumbnail: '/images/Home/Blog/3.png',
+    description:
+      'Leveraging best-in-class AI technology to protect and monitor blockchain protocols and smart ntracts.',
   },
   {
     link: '/blog/new-article',
     category: 'economic rick',
     title: 'Security of information systems',
     thumbnail: '/images/Home/Blog/1.png',
+    description:
+      'Leveraging best-in-class AI technology to protect and monitor blockchain protocols and smart ntracts.',
   },
   {
     link: '/blog/new-article',
     category: 'general',
     title: 'Protection of personal data',
     thumbnail: '/images/Home/Blog/2.png',
+    description:
+      'Leveraging best-in-class AI technology to protect and monitor blockchain protocols and smart ntracts.',
   },
   {
     link: '/blog/new-article',
     category: 'partnerships',
     title: 'Identification of potential and real threats',
     thumbnail: '/images/Home/Blog/3.png',
+    description:
+      'Leveraging best-in-class AI technology to protect and monitor blockchain protocols and smart ntracts.',
   },
   {
     link: '/blog/new-article',
     category: 'economic rick',
     title: 'Security of information systems',
     thumbnail: '/images/Home/Blog/1.png',
+    description:
+      'Leveraging best-in-class AI technology to protect and monitor blockchain protocols and smart ntracts.',
   },
   {
     link: '/blog/new-article',
     category: 'general',
     title: 'Protection of personal data',
     thumbnail: '/images/Home/Blog/2.png',
+    description:
+      'Leveraging best-in-class AI technology to protect and monitor blockchain protocols and smart ntracts.',
   },
   {
     link: '/blog/new-article',
     category: 'partnerships',
     title: 'Identification of potential and real threats',
     thumbnail: '/images/Home/Blog/3.png',
+    description:
+      'Leveraging best-in-class AI technology to protect and monitor blockchain protocols and smart ntracts.',
   },
   {
     link: '/blog/new-article',
     category: 'economic rick',
     title: 'Security of information systems',
     thumbnail: '/images/Home/Blog/1.png',
+    description:
+      'Leveraging best-in-class AI technology to protect and monitor blockchain protocols and smart ntracts.',
   },
   {
     link: '/blog/new-article',
     category: 'general',
     title: 'Protection of personal data',
     thumbnail: '/images/Home/Blog/2.png',
+    description:
+      'Leveraging best-in-class AI technology to protect and monitor blockchain protocols and smart ntracts.',
   },
   {
     link: '/blog/new-article',
     category: 'partnerships',
     title: 'Identification of potential and real threats',
     thumbnail: '/images/Home/Blog/3.png',
+    description:
+      'Leveraging best-in-class AI technology to protect and monitor blockchain protocols and smart ntracts.',
   },
 ]
 

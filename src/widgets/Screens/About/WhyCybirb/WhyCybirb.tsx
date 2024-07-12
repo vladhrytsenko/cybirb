@@ -26,7 +26,7 @@ export const WhyCybirb = () => {
                 stroke='#272629'
               />
             </svg>
-            <span className={styles.title}>Why Cybirb</span>
+            <span className={styles.title}>Features</span>
           </div>
           <div className={styles.horizontalLine} />
         </div>
@@ -58,7 +58,14 @@ export const WhyCybirb = () => {
       </div>
       <div className={styles.cardsContainer}>
         <div className={styles.history}>
-          <h3 className={styles.title}>Cybirb History</h3>
+          <div className={styles.titleContainer}>
+            <h3 className={styles.title}>Cybirb History </h3>
+            <img
+              src='/images/About/WhyCybirb/arrow_right.svg'
+              alt='Arrow'
+              className={styles.icon}
+            />
+          </div>
         </div>
         <Swiper
           freeMode={true}

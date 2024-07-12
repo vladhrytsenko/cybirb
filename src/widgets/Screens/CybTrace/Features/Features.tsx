@@ -32,10 +32,11 @@ export const Features = () => {
         <div className={styles.cards}>
           {cybTraceFeatures.map((feature) => (
             <FeatureCard
+              prefix=''
               title={feature.title}
               text={feature.text}
               icon={feature.icon}
-              link={feature.link ? true : false}
+              link={!!feature.link}
               linkHref={feature.link?.href}
               linkTitle={feature.link?.title}
             />

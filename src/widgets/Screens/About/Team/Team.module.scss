@@ -87,7 +87,7 @@
     @apply flex max-lg:flex-col h-[34.164vw] max-lg:h-min min-h-[206px] mt-[clamp(34px,5.101vw,86px)];
 
     .image {
-      @apply h-full w-[45vw] max-lg:w-full;
+      @apply h-full w-[45vw] max-lg:w-full rounded-[8px];
     }
 
     .details {
@@ -107,6 +107,10 @@
 
       .globalPresence {
         @apply pl-[3.559vw] pr-[1.779vw] pt-[clamp(28px,1.898vw,32px)] pb-[14px] border-t-[1px] border-t-[rgba(255,255,255,0.07)] max-sm:border-t-[transparent] max-sm:pt-[8px];
+
+        .title {
+          @apply text-center normal-case;
+        }
 
         .globalPresenceItems {
           @apply grid grid-cols-3 mt-[clamp(18px,1.483vw,25px)] max-sm:grid-cols-1;

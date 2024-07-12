@@ -222,7 +222,7 @@ export const Hero = () => {
                     monitor blockchain protocols and smart contracts.
                   </p>
                 </div>
-                <Button size='big'>join now</Button>
+                <Button size='big'>Get Started</Button>
               </div>
             </div>
             <div className={styles.heroBlock}>

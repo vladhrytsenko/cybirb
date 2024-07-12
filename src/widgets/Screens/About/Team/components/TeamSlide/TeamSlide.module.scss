@@ -15,7 +15,7 @@
     .slideContent {
       @apply h-[45%] flex items-end justify-between p-[clamp(12px,0.712vw,24px)];
 
-      background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 3.38%, #000 100%);
+      background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 3.38%, #000 100%);
 
       .userDetails {
         @apply flex flex-col;
@@ -46,8 +46,8 @@
       .slideAdditionalContent {
         @apply h-full flex flex-col justify-between p-[clamp(12px,0.712vw,24px)];
 
-        background-color: hsl(0, 0%, 0%);
-        background-image: radial-gradient(ellipse farthest-side at right top, hsl(259, 100%, 14%) 0%, hsl(0, 0%, 0%) 100%);;
+        background-image:  url('/images/About/Team/teammate_bg.png');
+        background-size: cover;
 
         .userDetails {
           @apply flex flex-col sm:p-[12px];

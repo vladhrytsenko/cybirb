@@ -13,6 +13,10 @@
     @apply w-full flex max-md:flex-col items-center max-md:items-start justify-between max-md:mt-[20px];
   }
 
+  div[class='section-title-block'] h3 br {
+    @apply max-md:hidden;
+  }
+
   div[class='section-text-block'] {
     @apply max-w-[26.987vw] max-md:max-w-[100%] w-full mt-auto max-md:mt-[29px];
 

@@ -163,6 +163,7 @@ export const Services = () => {
               text={services[0].text}
               icon={services[0].icon}
               category={services[0].category}
+              clipType='2'
               id={1}
             />
           </div>
@@ -182,7 +183,7 @@ export const Services = () => {
               text={services[2].text}
               icon={services[2].icon}
               category={services[2].category}
-              clipType='3'
+              clipType='2'
               id={3}
             />
           </div>
@@ -192,6 +193,7 @@ export const Services = () => {
               text={services[3].text}
               icon={services[3].icon}
               category={services[3].category}
+              clipType='2'
               id={4}
             />
           </div>
@@ -211,7 +213,7 @@ export const Services = () => {
               text={services[5].text}
               icon={services[5].icon}
               category={services[5].category}
-              clipType='3'
+              clipType='2'
               id={6}
             />
           </div>
@@ -221,6 +223,7 @@ export const Services = () => {
               text={services[0].text}
               icon={services[0].icon}
               category={services[0].category}
+              clipType='2'
               id={7}
             />
           </div>
@@ -240,7 +243,7 @@ export const Services = () => {
               text={services[2].text}
               icon={services[2].icon}
               category={services[2].category}
-              clipType='3'
+              clipType='2'
               id={9}
             />
           </div>
@@ -250,6 +253,7 @@ export const Services = () => {
               text={services[3].text}
               icon={services[3].icon}
               category={services[3].category}
+              clipType='2'
               id={10}
             />
           </div>
@@ -269,7 +273,7 @@ export const Services = () => {
               text={services[5].text}
               icon={services[5].icon}
               category={services[5].category}
-              clipType='3'
+              clipType='2'
               id={12}
             />
           </div>

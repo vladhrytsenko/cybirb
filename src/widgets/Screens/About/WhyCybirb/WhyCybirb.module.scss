@@ -22,18 +22,18 @@
   }
 
   .cards {
-    @apply grid grid-cols-2 gap-[clamp(16px,1.186vw,20px)] mt-[clamp(36px,2.966vw,50px)];
+    @apply grid grid-cols-2 gap-[clamp(12px,1.186vw,20px)] mt-[clamp(36px,2.966vw,50px)];
   }
 
   .sectionTitle {
-    @apply capitalize text-center mt-[clamp(28px,2.847vw,48px)];
+    @apply capitalize text-center max-sm:text-left mt-[clamp(28px,2.847vw,48px)];
   }
 
   .sections {
     @apply grid grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1 gap-[clamp(16px,1.186vw,20px)] mt-[clamp(36px,2.966vw,50px)];
 
     .section {
-      @apply flex justify-center items-center w-full;
+      @apply flex justify-center items-center w-full max-sm:items-start;
     }
   }
 
@@ -49,8 +49,16 @@
       background-size: contain;
       border: 1px solid rgba(255, 255, 255, 0.07);
 
-      .title {
-        @apply text-center;
+      .titleContainer {
+        @apply flex justify-center max-sm:justify-between items-center w-full;
+
+        .title {
+          @apply text-center;
+        }
+
+        .icon {
+          @apply sm:hidden;
+        }
       }
     }
 

@@ -14,7 +14,7 @@
   }
 
   &Statistic {
-    @apply flex flex-col items-start gap-[3.25vh] capitalize;
+    @apply flex flex-col items-start max-sm:items-center gap-[3.25vh] capitalize;
 
     &Title {
       @apply text-[clamp(24px,2.372vw,40px)] font-medium;
@@ -31,7 +31,7 @@
   }
 
   &Statistics {
-    @apply flex justify-start items-center gap-[5.931vw] mb-[2.1vh];
+    @apply flex justify-start items-center gap-[5.931vw] mb-[2.1vh] max-sm:w-full max-sm:justify-center;
   }
 
   &LeftBlock {
@@ -46,7 +46,7 @@
     @apply flex flex-col gap-[3.25vh] w-full;
 
     button {
-      @apply max-sm:w-[100%];
+      @apply max-sm:w-[100%] max-sm:h-[40px];
     }
   }
 

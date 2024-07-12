@@ -13,7 +13,7 @@
     }
 
     .image {
-      @apply rounded-[1.068vw] h-full overflow-hidden;
+      @apply max-sm:hidden rounded-[1.068vw] h-full overflow-hidden;
 
       border: 0.059vw solid $stroke;
 

@@ -32,7 +32,7 @@
     @apply max-w-[clamp(325px,23.725vw,401px)] w-full;
 
     div[class='card-number'] {
-      @apply text-[clamp(18px,1.423vw,24px)];
+      @apply text-[clamp(18px,1.423vw,24px)] uppercase;
 
       &::before {
         @apply max-w-[clamp(160px,9vw,200px)] w-full h-[13px];
