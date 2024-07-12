@@ -106,7 +106,7 @@
   }
 
   .tickerContainer {
-    @apply relative mx-[-3.559vw] pt-[clamp(28px,3.559vw,60px)] pb-[clamp(34px,5.694vw,96px)];
+    @apply relative mx-[-3.559vw] pt-[clamp(28px,3.559vw,60px)] mb-[clamp(34px,5.694vw,96px)];
 
     .leftShadow {
       @apply max-md:hidden absolute h-full w-[10vw] z-10;
